@@ -23,7 +23,7 @@ const Footer = () => (
             <div className="cell medium-auto large-auto">
               <h4 className="header-tiny">Policies and Standards</h4>
               <ul className="no-bullet">
-                <li><a href="//planninglabs.nyc/open-source-policy/">Open source policy</a></li>
+                <li><a href="https://github.com/NYCPlanning/labs-open-source-policy/blob/master/policy.md">Open source policy</a></li>
               </ul>
             </div>
             <div className="cell medium-auto large-auto">
