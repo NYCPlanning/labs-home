@@ -3,10 +3,7 @@ import Link from 'gatsby-link'
 
 import {
     BookSVG,
-    SkylineSVG,
     HandshakeSVG,
-    MonitorSVG,
-    FolderSVG,
     DocumentSVG,
     AgileSVG
   } from '../components/svg-icons'
