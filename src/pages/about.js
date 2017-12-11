@@ -1,6 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import {
+    BookSVG,
+    SkylineSVG,
+    HandshakeSVG,
+    MonitorSVG,
+    FolderSVG,
+    DocumentSVG,
+    AgileSVG
+  } from '../components/svg-icons'
+
 const AboutPage = () => (
   <div className="cell large-8" id="page-content">
      <h2 id="what-is-planning-labs" data-magellan-target="what-is-planning-labs">What is Planning Labs?</h2>
@@ -11,7 +21,7 @@ const AboutPage = () => (
      <p>We strive to work in a modern way and use best practices on all our projects. Here’s what that means to us:</p>
      <div className="media-object">
         <div className="media-object-section">
-
+          <BookSVG />
         </div>
         <div className="media-object-section">
            <h4>Open by Default</h4>
@@ -20,7 +30,7 @@ const AboutPage = () => (
      </div>
      <div className="media-object">
         <div className="media-object-section">
-          
+          <HandshakeSVG />
         </div>
         <div className="media-object-section">
            <h4>Build With, Not For</h4>
@@ -29,7 +39,7 @@ const AboutPage = () => (
      </div>
      <div className="media-object">
         <div className="media-object-section">
-
+          <AgileSVG />
         </div>
         <div className="media-object-section">
            <h4>Ship Early, Ship Often</h4>
@@ -38,7 +48,7 @@ const AboutPage = () => (
      </div>
      <div className="media-object">
         <div className="media-object-section">
-   
+          <DocumentSVG />
         </div>
         <div className="media-object-section">
            <h4>Document and Disseminate</h4>
