@@ -1,4 +1,5 @@
 import React from 'react'
+import NavLinks from './nav-links'
 
 const Header = () => (
   <header role="banner" className="site-header">
@@ -18,15 +19,7 @@ const Header = () => (
           <button className="responsive-nav-toggler" data-toggle="responsive-menu">Menu</button>
         </div>
         <div id="responsive-menu" className="cell large-shrink show-for-large" data-toggler=".show-for-large">
-          <nav role="navigation">
-            <ul className="menu vertical large-horizontal">
-              <li><a href="/about/">About</a></li>
-              <li><a href="/projects/">Projects</a></li>
-              <li><a href="/process/">Process</a></li>
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/contact/">Contact</a></li>
-            </ul>
-          </nav>
+          <NavLinks />
         </div>
       </div>
     </div>
