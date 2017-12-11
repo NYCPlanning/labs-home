@@ -11,7 +11,7 @@ const Footer = () => (
         <div className="cell medium-auto large-7">
           <div className="grid-x grid-padding-x grid-padding-y">
             <div className="cell medium-auto large-auto">
-              <nav>
+              <nav role="navigation" className="footer-nav">
                  <NavLinks />
               </nav>
             </div>

@@ -20,7 +20,9 @@ const Header = () => (
           <button className="responsive-nav-toggler" data-toggle="responsive-menu">Menu</button>
         </div>
         <div id="responsive-menu" className="cell large-shrink show-for-large" data-toggler=".show-for-large">
-          <NavLinks ulClasses="menu vertical large-horizontal"/>
+          <nav role="navigation" className="header-nav">
+            <NavLinks ulClasses="menu vertical large-horizontal"/>
+          </nav>
         </div>
       </div>
     </div>

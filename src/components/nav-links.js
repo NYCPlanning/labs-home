@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { TwitterSVG, GitHubSVG, RssSVG } from '../components/svg-icons'
+
 const links = [
   {
     text: 'About',
@@ -13,10 +15,6 @@ const links = [
   {
     text: 'Process',
     url: '/process',
-  },
-  {
-    text: 'Blog',
-    url: 'https://medium.com/nycplanninglabs',
   },
   {
     text: 'Contact',
@@ -39,11 +37,12 @@ const linksList = links.map((link) => {
 })
 
 const NavLinks = (props) => (
-  <nav role="navigation">
-    <ul className={`no-bullet ${props.ulClasses}`}>
-      {linksList}
-    </ul>
-  </nav>
+  <ul className={`no-bullet ${props.ulClasses}`}>
+    {linksList}
+    <li className="external-nav-item"><a title="GitHub" href="https://github.com/NYCPlanning/"><GitHubSVG /></a></li>
+    <li className="external-nav-item"><a title="Twitter" href="https://twitter.com/nycplanninglabs"><TwitterSVG /></a></li>
+    <li className="external-nav-item"><a title="Blog" href="https://medium.com/nycplanninglabs"><RssSVG /></a></li>
+  </ul>
 )
 
 export default NavLinks
