@@ -25,9 +25,9 @@ const links = [
 ];
 
 const linksList = links.map((link) => {
-  if (link.text === 'Blog') return (<li><a href={link.url}>{link.text}</a></li>)
+  if (link.text === 'Blog') return (<li key={link.text}><a href={link.url}>{link.text}</a></li>)
   return (
-    <li>
+    <li key={link.text}>
       <Link
           to={link.url}
           activeClassName="is-active"
