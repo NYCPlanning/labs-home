@@ -26,13 +26,10 @@
     .is-active {
       background-color: $menu-item-background-active;
       box-shadow: inset 0.5rem 0 0 $dcp-yellow;
+      color: $black;
+
       @include breakpoint(large) {
         box-shadow: inset 0 -0.5rem 0 $dcp-yellow;
-      }
-
-      a {
-        color: $black;
-        background-color: transparent;
       }
     }
   }
