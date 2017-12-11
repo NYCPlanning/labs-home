@@ -3,21 +3,9 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import '../scss/app.scss'
+import Header from '../components/header'
 
-const Header = () => (
-  <div>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-        >
-          NYC Planning Labs
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import '../scss/app.scss'
 
 const Footer = () => (
   <div className="site-footer text-center medium-text-right large-text-left">
