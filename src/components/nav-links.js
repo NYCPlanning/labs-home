@@ -38,9 +38,9 @@ const linksList = links.map((link) => {
   )
 })
 
-const NavLinks = () => (
+const NavLinks = (props) => (
   <nav role="navigation">
-    <ul className="menu vertical large-horizontal">
+    <ul className={props.ulClasses}>
       {linksList}
     </ul>
   </nav>

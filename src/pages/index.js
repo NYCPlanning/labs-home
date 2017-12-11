@@ -15,8 +15,7 @@ class IndexPage extends React.Component {
 
   render() {
     return (
-      <div>
-
+      <div className="main">
         <Hero
           tagline="We work with New York City's Urban Planners to deliver impactful, modern technology tools."
           buttonText="Get in touch"
