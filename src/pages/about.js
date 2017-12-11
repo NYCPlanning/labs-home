@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Hero from '../components/hero'
+
 import {
     BookSVG,
     HandshakeSVG,
@@ -9,6 +11,13 @@ import {
   } from '../components/svg-icons'
 
 const AboutPage = () => (
+  <div className="main">
+    <Hero
+      title="About Planning Labs"
+      tagline="We build open, impactful technology products at the NYC Department of City Planning."
+    />
+    <div className="grid-container">
+       <div className="grid-x grid-padding-x">
   <div className="cell large-8" id="page-content">
      <h2 id="what-is-planning-labs" data-magellan-target="what-is-planning-labs">What is Planning Labs?</h2>
      <p>Planning Labs is a new division of the <a href="http://www1.nyc.gov/site/planning/">NYC Department of City Planning</a> (DCP) that embraces open technology, agile development, and user-centered design to build impactful products with NYC’s Urban Planners.</p>
@@ -80,6 +89,9 @@ const AboutPage = () => (
      <h2 id="history" data-magellan-target="history">History</h2>
      <p>Planning Labs was established in June 2017 by DCP civic technologist Chris Whong, with planning and guidance from Danny Fuchs, Director of Capital Planning, Hassan Adekoya, CIO, and Jon Kaufman, COO. After a year of experimentation and success building the <a href="https://capitalplanning.nyc">Capital Planning Platform</a> using a 100% open source stack, a pitch was made to institutionalize modern development practices in the agency by establishing a service delivery unit within the Information Technology Division. Planning Labs’ mission would be to build lightweight impactful tools with the agency’s divisions as clients, and to be open, vocal, and inclusive about the modern technologies and processes used.</p>
   </div>
+</div>
+</div>
+</div>
 )
 
 export default AboutPage

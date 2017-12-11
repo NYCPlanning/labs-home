@@ -40,7 +40,7 @@ const linksList = links.map((link) => {
 
 const NavLinks = (props) => (
   <nav role="navigation">
-    <ul className={props.ulClasses}>
+    <ul className={`no-bullet ${props.ulClasses}`}>
       {linksList}
     </ul>
   </nav>
