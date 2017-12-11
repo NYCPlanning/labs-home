@@ -10,7 +10,8 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "latest",
     "motion-ui": "^1.2.3",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "react-sticky": "^6.0.1"
   },
   "keywords": [
     "gatsby"

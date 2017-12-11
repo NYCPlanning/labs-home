@@ -27,7 +27,7 @@ const Footer = () => (
                 <li><a href="https://github.com/NYCPlanning?utf8=%E2%9C%93&amp;q=labs-">Github</a></li>
                 <li><a href="https://twitter.com/nycplanninglabs">@NYCPlanningLabs</a></li>
                 <li><a href="mailto:labs_dl@planning.nyc.gov">labs_dl@planning.nyc.gov</a></li>
-                <li><a href="https://github.com/nycplanning/labs-planninglabs.nyc/issues/new">Report a bug</a></li>
+                <li><a href="https://github.com/nycplanning/labs-planninglabs-home/issues/new">Report a bug</a></li>
               </ul>
             </div>
           </div>
