@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `NYC Planning Labs`,
   },
   plugins: [
     `gatsby-plugin-sass`,
