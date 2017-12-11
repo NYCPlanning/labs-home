@@ -56,7 +56,13 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    >
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+    </Helmet>
+
     <Header />
     <div>
       {children()}
