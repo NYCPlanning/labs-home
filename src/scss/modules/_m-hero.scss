@@ -1,0 +1,26 @@
+// --------------------------------------------------
+// Hero Module
+// --------------------------------------------------
+
+.hero {
+  background-color: $dcp-orange;
+  color: $white;
+  margin: $global-margin*-2 0 $global-margin*2;
+  padding: $global-margin*2 0;
+
+  @include breakpoint(large) {
+    padding: 4vw 0;
+  }
+
+  .header-large {
+    color: $a11y-yellow;
+  }
+
+  .button {
+    @include button-style($a11y-orange, auto, $dcp-yellow);
+    margin: $global-margin $global-margin 0 0;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
