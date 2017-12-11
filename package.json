@@ -9,7 +9,8 @@
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "latest",
-    "motion-ui": "^1.2.3"
+    "motion-ui": "^1.2.3",
+    "react-router-dom": "^4.2.2"
   },
   "keywords": [
     "gatsby"
