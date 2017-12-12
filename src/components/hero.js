@@ -18,8 +18,6 @@ class Hero extends React.Component {
      }
    }
 
-
-
    return <div className="hero">
      <div className="grid-container">
        <div className="grid-x grid-padding-x">
