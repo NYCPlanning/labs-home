@@ -67,7 +67,7 @@ class IndexPage extends React.Component {
               </div>
 
               <div className="recent-posts-container">
-                 <h2 className="header-xlarge"><a href="/blog/">Recent blog posts</a></h2>
+                 <h2 className="header-xlarge">Recent blog posts <small style={{fontSize:"0.6em"}}><a href="https://medium.com/nycplanninglabs">See All (medium.com)</a></small></h2>
                  <BlogPosts />
               </div>
 
