@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # build static site
+rm -rf public
 gatsby build
 
 # goto build directory
@@ -18,4 +19,4 @@ git commit -m "deploy"
 git remote add dokku dokku@planninglabs.nyc:gatsby
 
 # push
-git push dokku master
+git push -f dokku master

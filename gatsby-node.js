@@ -12,12 +12,14 @@ const path = require(`path`)
 exports.onCreatePage = ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {
+    console.log(page)
     // Make the front page match everything client side.
     // Normally your paths should be a bit more judicious.
     if (page.path === `/projects/`) {
-      page.matchPath = `/:path`
-      createPage(page)
+      page.matchPath = `/projects/:path`
     }
+
+    createPage(page)
     resolve()
   })
 }
