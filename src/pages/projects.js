@@ -2,24 +2,33 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Link from 'gatsby-link';
 
+import Hero from '../components/hero'
 import Project from './project';
 
 const projectsUri = 'https://api.planninglabs.nyc/projects';
 
 const ProjectCard = ({ project }) => {
-  const { image: [ { thumbnails: { large: { url } } } ] } = project;
+
+  const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
 
   return (
-    <Link to={`/projects/${project.slug}`}>
-      <div key={project.name}>
-        {project.name}
-        <img src={url}/>
-      </div>
-    </Link>
+
+    <div className="cell" key={project.name}>
+      <Link to={`/projects/${project.slug}`} className="card-link">
+        <div className="card no-margin text-center">
+          { url && <img src={url} alt={project.name} /> }
+          <div className="card-section">
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+          </div>
+        </div>
+      </Link>
+    </div>
+
   )
 }
 
-class ProjectsPage extends React.Component {  
+class ProjectsPage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -36,6 +45,7 @@ class ProjectsPage extends React.Component {
     return fetch(projectsUri)
       .then(response => response.json())
       .then((projects) => {
+        console.log(projects)
         this.setState({ projects });
       });
   }
@@ -49,15 +59,35 @@ class ProjectsPage extends React.Component {
 
     return (
       <Switch>
-        <Route 
-          path='/projects' 
+        <Route
+          path='/projects'
           exact
           render={
             (transition) => {
               return (
-                <div>
-                  { length ? projectCards() : 'Loading...' }
+
+                <div className="main">
+                  <Hero
+                    title="Projects"
+                    tagline="We design, prototype, and build lightweight & open technology tools for planners."
+                  />
+                <div className="grid-container">
+                    <div className="grid-x grid-padding-x grid-padding-y">
+                      <div className="cell large-9">
+                        <p className="lead">We take on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks. Our work is open by default, so you can get involved in these projects.</p>
+                      </div>
+                      <div className="cell large-3">
+                        <Link to="/process" className="button large">More about our&nbsp;process&hellip;</Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid-container">
+                    <div className="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-3">
+                      { length ? projectCards() : 'Loading...' }
+                    </div>
+                  </div>
                 </div>
+
               )
             }
           }/>
