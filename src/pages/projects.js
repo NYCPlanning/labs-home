@@ -30,6 +30,32 @@ const ProjectCard = ({ project }) => {
   )
 }
 
+const DevCard = ({ project }) => {
+
+  const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
+
+  return (
+      <div className="media-object">
+      <div className="media-object-section" style={{paddingRight:'1rem'}}>
+        <a href={project.github} target="_blank"><FontAwesome name='github ' size='2x' /></a>
+      </div>
+      <div className="media-object-section">
+        <h4 className="header-small" style={{marginBottom:'0.5rem'}}>
+          <a href={project.github} target="_blank">
+            {project.name}
+            <br/><small>{project.github.split('github.com/')[1]}</small>
+          </a>
+        </h4>
+         <p className="text-small">
+           {project.tagline}
+         </p>
+
+      </div>
+    </div>
+
+  )
+}
+
 class ProjectsPage extends React.Component {
   constructor(props) {
     super(props);
@@ -53,15 +79,27 @@ class ProjectsPage extends React.Component {
 
   render() {
     const { projects } = this.state;
+
     const projectCards = () => {
-      const cards = projects
+      const featuredProjects = projects.filter(d => d.type === 'feature')
+      const cards = featuredProjects
         .map((project, i) => <ProjectCard key={i} project={project}/>);
 
       return (
-        <div className="grid-container">
-          <div className="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-3">
-            {cards}
-          </div>
+        <div className="grid-x grid-padding-x grid-margin-y medium-up-2">
+          {cards}
+        </div>
+      )
+    }
+
+    const devCards = () => {
+      const devProjects = projects.filter(d => d.type === 'resource')
+      const cards = devProjects
+        .map((project, i) => <DevCard key={i} project={project}/>);
+
+      return (
+        <div>
+          {cards}
         </div>
       )
     }
@@ -101,8 +139,16 @@ class ProjectsPage extends React.Component {
                         <Link to="/process" className="button large">More about our&nbsp;process&hellip;</Link>
                       </div>
                     </div>
+                    <div className="grid-x grid-margin-x">
+                      <div className="cell large-8">
+                        { length ? projectCards() : spinner() }
+                      </div>
+                      <div className="cell large-4">
+                        <h3>Developer Resources</h3>
+                        { length ? devCards() : spinner() }
+                      </div>
+                    </div>
                   </div>
-                  { length ? projectCards() : spinner() }
                 </div>
               )
             }
