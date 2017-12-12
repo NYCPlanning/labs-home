@@ -31,7 +31,7 @@ class BlogPosts extends React.Component {
            <span className="post-date">{moment(post.created).format('LL')}</span>
            <h1 className="header-medium"><a href={post.url}>{post.title}</a></h1>
            <p className="post-excerpt">{post.description}</p>
-           <a className="button small" href="/blog/2017/building-ideas-app/">Read more…</a>
+           <a className="button small hollow" href={post.url}>Read more…</a>
         </div>
       ))
     }
