@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import BlogPosts from '../components/blog-posts'
 import Hero from '../components/hero'
+
 import {
     SkylineSVG,
     MonitorSVG,
@@ -63,6 +65,12 @@ class IndexPage extends React.Component {
 
                 </div>
               </div>
+
+              <div className="recent-posts-container">
+                 <h2 className="header-xlarge"><a href="/blog/">Recent blog posts</a></h2>
+                 <BlogPosts />
+              </div>
+
 
             </div>
           </div>
