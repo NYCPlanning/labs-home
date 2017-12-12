@@ -16,7 +16,7 @@ git add .
 git commit -m "deploy"
 
 # add git remote
-git remote add dokku dokku@planninglabs.nyc:gatsby
+git remote add dokku dokku@planninglabs.nyc:planninglabs
 
 # push
 git push -f dokku master
