@@ -13,7 +13,6 @@ class BlogPosts extends React.Component {
       .then(response => response.json())
       .then(json => {
         const posts = json.items;
-        console.log(posts)
         this.setState({ posts })
       })
   }

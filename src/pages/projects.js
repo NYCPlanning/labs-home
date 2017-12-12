@@ -45,7 +45,6 @@ class ProjectsPage extends React.Component {
     return fetch(projectsUri)
       .then(response => response.json())
       .then((projects) => {
-        console.log(projects)
         this.setState({ projects });
       });
   }
@@ -98,7 +97,6 @@ class ProjectsPage extends React.Component {
             transition => {
               const { match: { params: { id } } } = transition;
               const project = projects.find(project => {
-                console.log(project);
                 const { slug } = project;
                 return slug === id;
               });

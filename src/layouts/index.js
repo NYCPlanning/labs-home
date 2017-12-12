@@ -22,7 +22,6 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
 
     <Header />
-    {console.log('chidlren', children())}
     {children()}
     <Footer />
   </div>

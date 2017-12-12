@@ -11,10 +11,6 @@ import {
   } from '../components/svg-icons'
 
 class IndexPage extends React.Component {
-  componentWillMount() {
-    console.log('componentWillMount!!!')
-  }
-
   render() {
     return (
       <div className="main">
