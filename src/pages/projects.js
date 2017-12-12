@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Link from 'gatsby-link';
+import FontAwesome from 'react-fontawesome'
+
 
 import Hero from '../components/hero'
 import Project from './project';
@@ -51,8 +53,28 @@ class ProjectsPage extends React.Component {
 
   render() {
     const { projects } = this.state;
-    const projectCards = () => projects
-      .map((project, i) => <ProjectCard key={i} project={project}/>);
+    const projectCards = () => {
+      const cards = projects
+        .map((project, i) => <ProjectCard key={i} project={project}/>);
+
+      return (
+        <div className="grid-container">
+          <div className="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-3">
+            {cards}
+          </div>
+        </div>
+      )
+    }
+
+
+    const spinner = () => (
+      <div className="main text-center" style={{
+          padding: '20vh 0',
+          color: '#888',
+        }}>
+        <FontAwesome name='refresh' size='3x' spin/>
+      </div>
+    )
 
     const { length } = projects;
 
@@ -63,14 +85,14 @@ class ProjectsPage extends React.Component {
           exact
           render={
             (transition) => {
-              return (
 
+              return (
                 <div className="main">
                   <Hero
                     title="Projects"
                     tagline="We design, prototype, and build lightweight & open technology tools for planners."
                   />
-                <div className="grid-container">
+                  <div className="grid-container">
                     <div className="grid-x grid-padding-x grid-padding-y">
                       <div className="cell large-9">
                         <p className="lead">We take on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks. Our work is open by default, so you can get involved in these projects.</p>
@@ -80,13 +102,8 @@ class ProjectsPage extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="grid-container">
-                    <div className="grid-x grid-margin-x grid-margin-y medium-up-2 large-up-3">
-                      { length ? projectCards() : 'Loading...' }
-                    </div>
-                  </div>
+                  { length ? projectCards() : spinner() }
                 </div>
-
               )
             }
           }/>
