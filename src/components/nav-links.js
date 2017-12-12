@@ -39,9 +39,9 @@ const linksList = links.map((link) => {
 const NavLinks = (props) => (
   <ul className={`no-bullet ${props.ulClasses}`}>
     {linksList}
-    <li className="external-nav-item"><a title="GitHub" href="https://github.com/NYCPlanning/"><GitHubSVG /></a></li>
-    <li className="external-nav-item"><a title="Twitter" href="https://twitter.com/nycplanninglabs"><TwitterSVG /></a></li>
-    <li className="external-nav-item"><a title="Blog" href="https://medium.com/nycplanninglabs"><RssSVG /></a></li>
+    <li className="external-nav-item"><a title="GitHub" href="https://github.com/NYCPlanning/"><GitHubSVG /><span className="hide-for-large"> &nbsp; GitHub</span></a></li>
+    <li className="external-nav-item"><a title="Twitter" href="https://twitter.com/nycplanninglabs"><TwitterSVG /><span className="hide-for-large"> &nbsp; Twitter</span></a></li>
+    <li className="external-nav-item"><a title="Blog" href="https://medium.com/nycplanninglabs"><RssSVG /><span className="hide-for-large"> &nbsp; Blog</span></a></li>
   </ul>
 )
 
