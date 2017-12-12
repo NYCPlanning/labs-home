@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { StickyContainer, Sticky } from 'react-sticky';
+import Scrollspy from 'react-scrollspy'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Hero from '../components/hero'
 
@@ -16,54 +18,55 @@ const ProcessPage = () => (
         <div className="page-nav cell large-4">
 
 
-          <Sticky>
+          <Sticky >
             {
-              ({ style, distanceFromTop }) => {
-                console.log(style, distanceFromTop);
-
-
+              ({ style }) => {
                 return (
-                  <div style={style}>
+                  <div className="sticky" style={style}>
                     <h4 className="page-nav--header header-small" style={{paddingTop: '1rem'}}>From Idea to Pipeline</h4>
-                    <ul className="menu vertical">
-                      <li><a href="#step-1" className="is-active">Step 1: Idea Submission</a></li>
-                      <li><a href="#step-2" className="">Step 2: Idea Vetting</a></li>
-                      <li><a href="#step-3" className="">Step 3: Idea Listing</a></li>
-                      <li><a href="#step-4" className="">Step 4: Project Selection</a></li>
-                      <li><a href="#step-5" className="">Step 5: Pipeline Posting</a></li>
-                    </ul>
+                    <Scrollspy className="menu vertical" items={ ['step-1', 'step-2', 'step-3', 'step-4', 'step-5'] } currentClassName="is-active">
+                      <li><Link to="/process#step-1" className="">Step 1: Idea Submission</Link></li>
+                      <li><Link to="/process#step-2" className="">Step 2: Idea Vetting</Link></li>
+                      <li><Link to="/process#step-3" className="">Step 3: Idea Listing</Link></li>
+                      <li><Link to="/process#step-4" className="">Step 4: Project Selection</Link></li>
+                      <li><Link to="/process#step-5" className="">Step 5: Pipeline Posting</Link></li>
+                    </Scrollspy>
                   </div>
                 )
               }
             }
           </Sticky>
         </div>
-          <div className="cell large-8" id="page-content">
-            <h2 id="step-1" data-magellan-target="step-1">Step 1: Idea Submission</h2>
-            <h6>Customer</h6>
-            <p>DCP staff submit a clearly defined problem that needs solving, such as a real-world planning issue, a minor technical workflow improvement, or something in between.</p>
-            <p><a className="button" href="https://ideas.planninglabs.nyc/create">Submit an idea</a></p>
-            <h2 id="step-2" data-magellan-target="step-2">Step 2: Idea Vetting</h2>
-            <h6> Labs + Customer</h6>
-            <p>When an idea is submitted, the Planning Labs team starts a dialogue with the customer to determine if it’s a good candidate for a Labs project.</p>
-            <ul>
-              <li>Subject matter and data can be openly discussed</li>
-              <li>Minimum viable product is achievable in 4 to 6 weeks</li>
-              <li>Technical fit for the skillset of the Planning Labs team</li>
-              <li>Alignment with DCP mission and strategic objectives</li>
-            </ul>
-            <h2 id="step-3" data-magellan-target="step-3">Step 3: Idea Listing</h2>
-            <h6> Everyone</h6>
-            <p>Vetted ideas enter a public listing where stakeholders can promote their idea through open discussion. Although the ideas in this list may be a good fit, they’re not Labs projects yet.</p>
-            <p><a className="button" href="https://ideas.planninglabs.nyc/">View the ideas list</a></p>
-            <h2 id="step-4" data-magellan-target="step-4">Step 4: Project Selection</h2>
-            <h6> Executive Office + Labs</h6>
-            <p>Each time the Planning Labs team completes a project, the Chief Operating Officer selects a new project from the ideas list.</p>
-            <h2 id="step-5" data-magellan-target="step-5">Step 5: Pipeline Posting</h2>
-            <h6> Everyone</h6>
-            <p>When a new project is selected, it’s added to the pipeline on our website, which contains three projects—our currently active project, and the next two on deck.</p>
-            <p><a className="button" href="/projects/">View our pipeline</a></p>
-          </div>
+        <div className="cell large-8" id="page-content">
+          <h2 id="step-1">Step 1: Idea Submission</h2>
+          <h6>Customer</h6>
+          <p>DCP staff submit a clearly defined problem that needs solving, such as a real-world planning issue, a minor technical workflow improvement, or something in between.</p>
+          <p><a className="button" href="https://ideas.planninglabs.nyc/create">Submit an idea</a></p>
+
+          <h2 id="step-2">Step 2: Idea Vetting</h2>
+          <h6> Labs + Customer</h6>
+          <p>When an idea is submitted, the Planning Labs team starts a dialogue with the customer to determine if it’s a good candidate for a Labs project.</p>
+          <ul>
+            <li>Subject matter and data can be openly discussed</li>
+            <li>Minimum viable product is achievable in 4 to 6 weeks</li>
+            <li>Technical fit for the skillset of the Planning Labs team</li>
+            <li>Alignment with DCP mission and strategic objectives</li>
+          </ul>
+
+          <h2 id="step-3">Step 3: Idea Listing</h2>
+          <h6> Everyone</h6>
+          <p>Vetted ideas enter a public listing where stakeholders can promote their idea through open discussion. Although the ideas in this list may be a good fit, they’re not Labs projects yet.</p>
+          <p><a className="button" href="https://ideas.planninglabs.nyc/">View the ideas list</a></p>
+
+          <h2 id="step-4">Step 4: Project Selection</h2>
+          <h6> Executive Office + Labs</h6>
+          <p>Each time the Planning Labs team completes a project, the Chief Operating Officer selects a new project from the ideas list.</p>
+
+          <h2 id="step-5">Step 5: Pipeline Posting</h2>
+          <h6> Everyone</h6>
+          <p>When a new project is selected, it’s added to the pipeline on our website, which contains three projects—our currently active project, and the next two on deck.</p>
+          <p><a className="button" href="/projects/">View our pipeline</a></p>
+        </div>
       </StickyContainer>
 
     </div>

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "anchorate": "^1.1.0",
     "foundation-sites": "^6.4.1",
     "gatsby": "^1.9.127",
     "gatsby-link": "^1.6.30",
@@ -11,6 +12,8 @@
     "gatsby-plugin-sass": "latest",
     "motion-ui": "^1.2.3",
     "react-router-dom": "^4.2.2",
+    "react-scrollable-anchor": "^0.5.0",
+    "react-scrollspy": "^3.3.4",
     "react-sticky": "^6.0.1"
   },
   "keywords": [

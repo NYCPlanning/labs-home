@@ -27,6 +27,11 @@
   .is-active {
     background-color: $light-gray;
     border-left: 0.5rem solid $dcp-yellow;
+
+    a {
+      color: $a11y-orange;
+      padding-left: 8px;
+    }
   }
 }
 
