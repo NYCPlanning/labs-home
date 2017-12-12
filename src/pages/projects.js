@@ -14,8 +14,7 @@ const ProjectCard = ({ project }) => {
   const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
 
   return (
-
-    <div className="cell" key={project.name}>
+    <div className="cell medium-6" key={project.name}>
       <Link to={`/projects/${project.slug}`} className="card-link">
         <div className="card no-margin text-center">
           { url && <img src={url} alt={project.name} /> }
@@ -26,7 +25,6 @@ const ProjectCard = ({ project }) => {
         </div>
       </Link>
     </div>
-
   )
 }
 
@@ -36,7 +34,7 @@ const DevCard = ({ project }) => {
 
   return (
       <div className="media-object">
-      <div className="media-object-section" style={{paddingRight:'1rem'}}>
+      <div className="media-object-section" style={{paddingRight:'1rem',opacity: '0.7'}}>
         <a href={project.github} target="_blank"><FontAwesome name='github ' size='2x' /></a>
       </div>
       <div className="media-object-section">
@@ -49,10 +47,8 @@ const DevCard = ({ project }) => {
          <p className="text-small">
            {project.tagline}
          </p>
-
       </div>
     </div>
-
   )
 }
 
@@ -86,7 +82,7 @@ class ProjectsPage extends React.Component {
         .map((project, i) => <ProjectCard key={i} project={project}/>);
 
       return (
-        <div className="grid-x grid-padding-x grid-margin-y medium-up-2">
+        <div className="grid-x grid-margin-x grid-margin-y">
           {cards}
         </div>
       )
@@ -131,7 +127,7 @@ class ProjectsPage extends React.Component {
                     tagline="We design, prototype, and build lightweight & open technology tools for planners."
                   />
                   <div className="grid-container">
-                    <div className="grid-x grid-padding-x grid-padding-y">
+                    <div className="grid-x grid-margin-x grid-padding-y">
                       <div className="cell large-9">
                         <p className="lead">We take on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks. Our work is open by default, so you can get involved in these projects.</p>
                       </div>
