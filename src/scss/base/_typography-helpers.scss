@@ -19,3 +19,11 @@ pre code {
   background: $light-gray;
   margin-bottom: $global-margin;
 }
+
+.inline-icon {
+  display: inline-block;
+  height: 1em;
+  transform: scale(1.5);
+  vertical-align: text-bottom;
+  fill: currentColor;
+}

@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
           { url && <img src={url} alt={project.name} /> }
           <div className="card-section">
             <h3>{project.name}</h3>
-            <p>{project.description}</p>
+            <p>{project.tagline}</p>
           </div>
         </div>
       </Link>

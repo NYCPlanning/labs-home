@@ -1,19 +1,66 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { GitHubSVG } from '../components/svg-icons'
+import Hero from '../components/hero'
+
 class Project extends React.Component {
   render() {
     const { project } = this.props;
 
-    return (
-      <div className="main">
-        { project &&
-          <div>
-            <h1>{ project.slug }</h1>
+    if (project) {
+      const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
+
+      let customer = null;
+      if (project.customer) {
+      customer = (
+        <div>
+          <hr />
+          <h6>Customer</h6>
+          { project.customer }
           </div>
-        }
-      </div>
-    )
+        )
+      }
+
+
+      let github = null;
+      if (project.github) {
+        github = (
+          <div>
+            <hr />
+            <h6>GitHub Repository</h6>
+            <a href="{ project.github_repo }"><GitHubSVG /> { project.github }</a>
+          </div>
+        )
+      }
+
+      return (
+        <div>
+            <div className="main">
+              <Hero
+                title={project.name}
+                tagline={project.tagline}
+                buttonText={project.url.split('//')[1]}
+                buttonURL={project.url}
+              />
+              <div className="grid-container">
+                <div className="grid-x grid-padding-x">
+                  <div className="cell medium-7">
+                    <p style={{whiteSpace:'pre-line'}}>{ project.description }</p>
+                  </div>
+                  <div className="cell medium-5">
+                    <a href={project.url}>{ url && <img src={url} alt={project.name} className="project-image" /> }</a>
+                    {customer}
+                    {github}
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      )
+    }
+
+    return null
   }
 }
 
