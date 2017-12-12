@@ -8,7 +8,17 @@ class Hero extends React.Component {
 
    const tagline = this.props.tagline ? <h2 className="header-xlarge">{ this.props.tagline }</h2> : null;
 
-   const button = this.props.buttonText && this.props.buttonURL ? <Link to={ this.props.buttonURL } className="button large">{ this.props.buttonText }</Link> : null;
+   let button = null;
+
+   if (this.props.buttonText && this.props.buttonURL) {
+     if (this.props.buttonURL.split('//')[1]) {
+       button = <a href={ this.props.buttonURL } className="button large" target="_blank">{ this.props.buttonText }</a>
+     } else {
+       button = <Link to={ this.props.buttonURL } className="button large">{ this.props.buttonText }</Link>
+     }
+   }
+
+
 
    return <div className="hero">
      <div className="grid-container">
