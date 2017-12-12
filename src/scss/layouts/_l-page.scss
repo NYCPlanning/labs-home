@@ -38,3 +38,16 @@
 .page-nav--header {
   color: $dark-gray;
 }
+
+// Override Sticky positioning on small, medium screens
+// @include breakpoint(medium down) {
+//   .page-nav > div > div:first-child  {
+//       padding: 0 !important;
+//   }
+//   .page-nav > div > div:last-child  { /* this is .sidebar */
+//       position: static !important;
+//       transform: none !important;
+//       width: auto !important;
+//   }
+// }
+//

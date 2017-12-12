@@ -15,10 +15,9 @@ const ProcessPage = () => (
     <div className="grid-container">
       <StickyContainer className="grid-x grid-padding-x">
 
-        <div className="page-nav cell large-4">
+        <div className="page-nav cell large-4 show-for-large">
 
-
-          <Sticky >
+          <Sticky>
             {
               ({ style }) => {
                 return (
