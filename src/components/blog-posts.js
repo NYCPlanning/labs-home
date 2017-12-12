@@ -17,12 +17,6 @@ class BlogPosts extends React.Component {
       })
   }
 
-  getInitialState() {
-    return {
-      posts: null,
-    }
-  }
-
   render() {
 
     const renderPosts = (posts) => {
