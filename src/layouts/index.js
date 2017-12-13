@@ -13,7 +13,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="NYC Planning Labs"
       meta={[
-        { name: 'description', content: 'NYC Planning Labs builds open, impactful, modern technology tools for urban planners' 
+        { name: 'description', content: 'NYC Planning Labs builds open, impactful, modern technology tools for urban planners' }
+      ]}
     >
       <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
