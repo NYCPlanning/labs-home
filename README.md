@@ -24,10 +24,10 @@ In the spirit of free software, everyone is encouraged to help improve this proj
 
 You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [gatsby-cli](https://www.npmjs.com/package/gatsby-cli) (to run [Gatsby](https://www.gatsbyjs.org/) commands)
-* [Yarn](https://yarnpkg.com/)
+* **[Git](https://git-scm.com/)**
+* **[Node.js](https://nodejs.org/)** (with NPM)
+* **[gatsby-cli](https://www.npmjs.com/package/gatsby-cli)** (to run [Gatsby](https://www.gatsbyjs.org/) commands)
+* **[Yarn](https://yarnpkg.com/)**
 
 ## Local development
 
@@ -40,8 +40,8 @@ You will need the following things properly installed on your computer.
 
 ### Backend services
 
-- **[Airtable](https://airtable.com/)** - Used to manage project content
-- **[labs-ideas-api](https://github.com/NYCPlanning/labs-ideas/)** - Pulls in projects from Airtable
+- **[Airtable](https://airtable.com/)** (used to manage project content)
+- **[labs-ideas-api](https://github.com/NYCPlanning/labs-ideas/)** (pulls in projects from Airtable)
 
 ## Deployment
 
