@@ -40,7 +40,7 @@ You will need the following things properly installed on your computer.
 
 ### Backend services
 
-- **[Airtable](https://airtable.com/)** - Use to manage project content
+- **[Airtable](https://airtable.com/)** - Used to manage project content
 - **[labs-ideas-api](https://github.com/NYCPlanning/labs-ideas/)** - Pulls in projects from Airtable
 
 ## Deployment
