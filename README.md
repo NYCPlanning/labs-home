@@ -20,6 +20,8 @@ In the spirit of free software, everyone is encouraged to help improve this proj
   - Clean up code
   - Add new features
 
+**[Read more about contributing.](CONTRIBUTING.md)**
+
 ## Requirements
 
 You will need the following things properly installed on your computer.
@@ -33,7 +35,7 @@ You will need the following things properly installed on your computer.
 
 - Clone this repo `git clone git@github.com:NYCPlanning/labs-planninglabs-home.git`
 - Navigate to the project directory `cd labs-planninglabs-home`
-- Run `yarn` to install dependencies 
+- Run `yarn` to install dependencies
 - `gatsby develop` — Gatsby will start a hot-reloading development environment accessible at `localhost:8000`. Edit the javascript pages in src/pages. Saved changes will live reload in the browser.
 - `gatsby build` — Gatsby will perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
 - `gatsby serve` — Gatsby starts a local HTML server for testing your built site.
@@ -47,7 +49,7 @@ You will need the following things properly installed on your computer.
 
 This project can be deployed on any static web server.
 
-- Deploy via Dokku using `npm run deploy` 
+- Deploy via Dokku using `npm run deploy`
 
 ## Contact us
 
