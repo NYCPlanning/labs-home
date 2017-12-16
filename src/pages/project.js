@@ -30,7 +30,7 @@ class Project extends React.Component {
           <div>
             <hr />
             <h6>GitHub Repository</h6>
-            <a href={ project.github } target="_blank"><GitHubSVG /> { project.github }</a>
+            <a href={ project.github } target="_blank"><GitHubSVG /> { project.github.split('//')[1] }</a>
           </div>
         )
       }
