@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
   return (
 
     <div className="cell" key={project.name}>
-      <Link to={`/projects/${project.slug}`} className="card-link">
+      <Link to={`/projects/${project.slug}/`} className="card-link">
         <div className="card no-margin text-center">
           { url && <img src={url} alt={project.name} /> }
           <div className="card-section">
@@ -136,7 +136,7 @@ class ProjectsPage extends React.Component {
                         <p className="lead">We take on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks. Our work is open by default, so you can get involved in these projects.</p>
                       </div>
                       <div className="cell large-3">
-                        <Link to="/process" className="button large">More about our&nbsp;process&hellip;</Link>
+                        <Link to="/process/" className="button large">More about our&nbsp;process&hellip;</Link>
                       </div>
                     </div>
                     <div className="grid-x grid-margin-x">

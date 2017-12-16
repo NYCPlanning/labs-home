@@ -42,7 +42,7 @@ class Project extends React.Component {
                 title={project.name}
                 tagline={project.tagline}
                 buttonText={project.url.split('//')[1]}
-                buttonURL={project.url}
+                buttonURL={`${project.url}/`}
               />
               <div className="grid-container">
                 <div className="grid-x grid-padding-x">

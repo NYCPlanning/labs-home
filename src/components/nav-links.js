@@ -6,19 +6,19 @@ import { TwitterSVG, GitHubSVG, RssSVG } from '../components/svg-icons'
 const links = [
   {
     text: 'About',
-    url: '/about',
+    url: '/about/',
   },
   {
     text: 'Projects',
-    url: '/projects',
+    url: '/projects/',
   },
   {
     text: 'Process',
-    url: '/process',
+    url: '/process/',
   },
   {
     text: 'Contact',
-    url: '/contact',
+    url: '/contact/',
   },
 ];
 

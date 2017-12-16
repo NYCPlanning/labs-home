@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
         <Hero
           tagline="We work with New York City's Urban Planners to deliver impactful, modern technology tools."
           buttonText="Get in touch"
-          buttonURL="/contact"
+          buttonURL="/contact/"
           />
 
         <div className="grid-container">

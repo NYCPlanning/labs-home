@@ -24,11 +24,11 @@ const ProcessPage = () => (
                   <div className="sticky" style={style}>
                     <h4 className="page-nav--header header-small" style={{paddingTop: '1rem'}}>From Idea to Pipeline</h4>
                     <Scrollspy className="menu vertical" items={ ['step-1', 'step-2', 'step-3', 'step-4', 'step-5'] } currentClassName="is-active">
-                      <li><Link to="/process#step-1" className="">Step 1: Idea Submission</Link></li>
-                      <li><Link to="/process#step-2" className="">Step 2: Idea Vetting</Link></li>
-                      <li><Link to="/process#step-3" className="">Step 3: Idea Listing</Link></li>
-                      <li><Link to="/process#step-4" className="">Step 4: Project Selection</Link></li>
-                      <li><Link to="/process#step-5" className="">Step 5: Pipeline Posting</Link></li>
+                      <li><Link to="/process#step-1/" className="">Step 1: Idea Submission</Link></li>
+                      <li><Link to="/process#step-2/" className="">Step 2: Idea Vetting</Link></li>
+                      <li><Link to="/process#step-3/" className="">Step 3: Idea Listing</Link></li>
+                      <li><Link to="/process#step-4/" className="">Step 4: Project Selection</Link></li>
+                      <li><Link to="/process#step-5/" className="">Step 5: Pipeline Posting</Link></li>
                     </Scrollspy>
                   </div>
                 )
