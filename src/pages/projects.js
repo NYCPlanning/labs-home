@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
 
   return (
 
-    <div className="cell" key={project.name}>
+    <div className="cell medium-6" key={project.name}>
       <Link to={`/projects/${project.slug}/`} className="card-link">
         <div className="card no-margin text-center">
           { url && <img src={url} alt={project.name} /> }
