@@ -10,6 +10,10 @@ cd public
 # add .static file so dokku will use nginx buildpack
 touch .static
 
+# copy custom nginx configs
+cp ../scripts/nginx.conf.sigil nginx.conf.sigil
+cp ../scripts/app-nginx.conf.sigil app-nginx.conf.sigil
+
 # create git repo in the build directory
 git init
 git add .
