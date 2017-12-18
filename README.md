@@ -40,7 +40,7 @@ You will need the following things properly installed on your computer.
 - `gatsby build` — Gatsby will perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
 - `gatsby serve` — Gatsby starts a local HTML server for testing your built site.
 
-### Backend services
+## Backend services
 
 - **[Airtable](https://airtable.com/)** (used to manage project content)
 - **[labs-ideas-api](https://github.com/NYCPlanning/labs-ideas/)** (pulls in projects from Airtable)
