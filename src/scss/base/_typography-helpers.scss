@@ -31,3 +31,11 @@ pre code {
 .text-small {
   font-size: rem-calc(12);
 }
+
+.status-down {
+  color: $warning-color;
+}
+
+.status-up {
+  color: $success-color;
+}

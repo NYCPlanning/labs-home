@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link';
 import NavLinks from './nav-links'
 
 const Footer = () => (
@@ -16,9 +17,9 @@ const Footer = () => (
               </nav>
             </div>
             <div className="cell medium-auto large-auto">
-              <h4 className="header-tiny">Policies and Standards</h4>
               <ul className="no-bullet">
                 <li><a href="https://github.com/NYCPlanning/labs-open-source-policy/blob/master/policy.md">Open source policy</a></li>
+                <li><Link to="/status/">Status dashboard</Link></li>
               </ul>
             </div>
             <div className="cell medium-auto large-auto">
