@@ -40,7 +40,7 @@ const ProcessPage = () => (
           <h2 id="step-1">Step 1: Idea Submission</h2>
           <h6>Customer</h6>
           <p>DCP staff submit a clearly defined problem that needs solving, such as a real-world planning issue, a minor technical workflow improvement, or something in between.</p>
-          <a className="button no-margin" href="https://ideas.planninglabs.nyc/create">Submit an idea</a>
+          <a className="button no-margin" href="/submit-idea/">Submit an idea</a>
 
           <hr />
 
@@ -56,22 +56,15 @@ const ProcessPage = () => (
 
           <hr />
 
-          <h2 id="step-3">Step 3: Idea Listing</h2>
-          <h6> Everyone</h6>
-          <p>Vetted ideas enter a public listing where stakeholders can promote their idea through open discussion. Although the ideas in this list may be a good fit, they’re not Labs projects yet.</p>
-          <a className="button no-margin" href="https://ideas.planninglabs.nyc/">View the ideas list</a>
-
-          <hr />
-
-          <h2 id="step-4">Step 4: Project Selection</h2>
+          <h2 id="step-4">Step 3: Project Selection</h2>
           <h6> Executive Office + Labs</h6>
-          <p>Each time the Planning Labs team completes a project, the Chief Operating Officer selects a new project from the ideas list.</p>
+          <p>The Chief Operating Officer is presented with vetted project ideas, and makes a selection to add to the Labs pipeline based on feasibility, timing, and overall impact.</p>
 
           <hr />
 
-          <h2 id="step-5">Step 5: Pipeline Posting</h2>
+          <h2 id="step-5">Step 4: Pipeline Posting</h2>
           <h6> Everyone</h6>
-          <p>When a new project is selected, it’s added to the pipeline on our website, which contains three projects—our currently active project, and the next two on deck.</p>
+          <p>When a project is selected, it’s added to the pipeline on our website.  We try to identify at least 3 pipeline projects: The one we are currently building, and the next two that are on-deck.</p>
           <a className="button no-margin" href="/projects/">View our pipeline</a>
         </div>
       </StickyContainer>
