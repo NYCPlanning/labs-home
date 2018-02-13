@@ -102,6 +102,19 @@ class ProjectsPage extends React.Component {
     }
 
 
+    const currentCards = () => {
+      const currentProjects = projects.filter(d => d.type === 'current')
+      const cards = currentProjects
+        .map((project, i) => <DevCard key={i} project={project}/>);
+
+      return (
+        <div>
+          {cards}
+        </div>
+      )
+    }
+
+
     const spinner = () => (
       <div className="main text-center" style={{
           padding: '20vh 0',
@@ -141,6 +154,9 @@ class ProjectsPage extends React.Component {
                         { length ? projectCards() : spinner() }
                       </div>
                       <div className="cell large-4">
+                        <h3>In the Works</h3>
+                        { length ? currentCards() : spinner() }
+
                         <h3>Developer Resources</h3>
                         { length ? devCards() : spinner() }
                       </div>
