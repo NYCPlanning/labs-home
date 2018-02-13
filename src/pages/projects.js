@@ -42,7 +42,7 @@ const DevCard = ({ project }) => {
         <h4 className="header-small" style={{marginBottom:'0.5rem'}}>
           <a href={project.github} target="_blank">
             {project.name}
-            <br/><small>{project.github.split('github.com/')[1]}</small>
+            <br/><small>{project.github ? project.github.split('github.com/')[1] : null}</small>
           </a>
         </h4>
          <p className="text-small">
