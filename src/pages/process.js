@@ -24,11 +24,10 @@ const ProcessPage = () => (
                   <div className="sticky" style={style}>
                     <h4 className="page-nav--header header-small" style={{paddingTop: '1rem'}}>From Idea to Pipeline</h4>
                     <Scrollspy className="menu vertical" items={ ['step-1', 'step-2', 'step-3', 'step-4', 'step-5'] } currentClassName="is-active">
-                      <li><Link to="/process#step-1/" className="">Step 1: Idea Submission</Link></li>
-                      <li><Link to="/process#step-2/" className="">Step 2: Idea Vetting</Link></li>
-                      <li><Link to="/process#step-3/" className="">Step 3: Idea Listing</Link></li>
-                      <li><Link to="/process#step-4/" className="">Step 4: Project Selection</Link></li>
-                      <li><Link to="/process#step-5/" className="">Step 5: Pipeline Posting</Link></li>
+                      <li><Link to="/process/#step-1" className="">Step 1: Idea Submission</Link></li>
+                      <li><Link to="/process/#step-2" className="">Step 2: Idea Vetting</Link></li>
+                      <li><Link to="/process/#step-3" className="">Step 3: Project Selection</Link></li>
+                      <li><Link to="/process/#step-4" className="">Step 4: Pipeline Posting</Link></li>
                     </Scrollspy>
                   </div>
                 )
@@ -56,13 +55,13 @@ const ProcessPage = () => (
 
           <hr />
 
-          <h2 id="step-4">Step 3: Project Selection</h2>
+          <h2 id="step-3">Step 3: Project Selection</h2>
           <h6> Executive Office + Labs</h6>
           <p>The Chief Operating Officer is presented with vetted project ideas, and makes a selection to add to the Labs pipeline based on feasibility, timing, and overall impact.</p>
 
           <hr />
 
-          <h2 id="step-5">Step 4: Pipeline Posting</h2>
+          <h2 id="step-4">Step 4: Pipeline Posting</h2>
           <h6> Everyone</h6>
           <p>When a project is selected, it’s added to the pipeline on our website.  We try to identify at least 3 pipeline projects: The one we are currently building, and the next two that are on-deck.</p>
           <a className="button no-margin" href="/projects/">View our pipeline</a>
