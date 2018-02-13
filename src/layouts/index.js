@@ -3,57 +3,28 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          NYC Planning Labs
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import '../scss/app.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="NYC Planning Labs"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'NYC Planning Labs builds open, impactful, modern technology tools for urban planners' }
       ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
     >
-      {children()}
-    </div>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <script type="text/javascript"src="js/track.js"></script>
+      <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+    </Helmet>
+
+    <Header />
+    {children()}
+    <Footer />
   </div>
 )
 

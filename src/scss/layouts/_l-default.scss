@@ -1,0 +1,98 @@
+// --------------------------------------------------
+// Layout default
+// --------------------------------------------------
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.site-header {
+  background-color: $white;
+
+  .menu {
+    a {
+      color: $dark-gray;
+      line-height: rem-calc(21);
+      padding: rem-calc(23) rem-calc(20);
+      font-size:  0.875rem;
+      font-weight: $global-weight-bold;
+
+      &:hover {
+        background-color: $light-gray;
+        color: $black;
+      }
+    }
+
+    .is-active {
+      background-color: $menu-item-background-active;
+      box-shadow: inset 0.5rem 0 0 $dcp-yellow;
+      color: $black;
+
+      @include breakpoint(large) {
+        box-shadow: inset 0 -0.5rem 0 $dcp-yellow;
+      }
+    }
+
+  }
+}
+
+
+.external-nav-item {
+
+  a {
+    font-weight: $global-weight-normal;
+    color: $primary-color;
+  }
+
+  svg {
+    height: 1em;
+    width: 1em;
+    transform: scale(2);
+    fill: $medium-gray;
+  }
+
+  a:hover svg {
+    fill: $primary-color;
+  }
+
+  .footer-nav & {
+    display: inline-block;
+    margin: 0.75rem;
+
+    svg {
+      transform: scale(3);
+    }
+  }
+}
+
+.responsive-nav-toggler {
+  color: $dark-gray;
+  background-color: $light-gray;
+  font-size:  0.875rem;
+  font-weight: $global-weight-bold;
+  line-height: rem-calc(21);
+  cursor: pointer;
+  margin: 0.625rem 0;
+  padding: rem-calc(10) rem-calc(16);
+}
+
+.main {
+  background-color: $white;
+  padding-top: $global-margin*2;
+  padding-bottom: $global-margin*3;
+}
+
+.site-footer {
+  background-color: $footer-color;
+  font-size: $small-font-size;
+  font-weight: $global-weight-bold;
+  padding: $global-margin 0;
+
+  ul{
+    line-height: 2;
+  }
+
+  .header-tiny {
+    text-transform: none;
+  }
+}

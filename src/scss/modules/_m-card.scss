@@ -1,0 +1,41 @@
+// --------------------------------------------------
+// Card
+// --------------------------------------------------
+
+.card {
+
+  &.is-current {
+    border-color: $a11y-orange;
+  }
+
+  .project-status {
+    display: block;
+    font-size: $small-font-size;
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
+    padding: 0.375rem;
+  }
+  .project-status--current {
+    background-color: $a11y-orange;
+    color: $a11y-yellow;
+  }
+  .project-status--upcoming {
+    background-color: $a11y-yellow;
+    color: $a11y-orange;
+  }
+}
+
+.card-link {
+  display: block;
+  border-radius: $global-radius;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    transform: scale(1.04);
+  }
+
+  p {
+    color: $body-font-color;
+  }
+}

@@ -1,0 +1,15 @@
+// --------------------------------------------------
+// Layout post
+// --------------------------------------------------
+
+.main.blog-post {
+  border-top: $global-margin solid $dcp-orange;
+}
+
+.post-date {
+  @extend h6;
+  display: block;
+  color: $dark-gray;
+  text-transform: uppercase;
+  margin: $global-margin 0;
+}

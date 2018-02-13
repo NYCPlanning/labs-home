@@ -1,0 +1,16 @@
+// --------------------------------------------------
+// Layout index page
+// --------------------------------------------------
+
+.recent-posts-container {
+  margin: $global-margin*2 0;
+
+  .header-xlarge {
+    margin: $global-margin*2 0;
+  }
+
+  .cell {
+    border-top: 0.5rem solid $secondary-color;
+    padding-top: $global-margin;
+  }
+}

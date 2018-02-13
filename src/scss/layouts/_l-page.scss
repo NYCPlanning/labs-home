@@ -1,0 +1,53 @@
+// --------------------------------------------------
+// Layout page
+// --------------------------------------------------
+
+.page-nav {
+  margin-bottom: $global-margin*2;
+
+  ul {
+    border-top: 1px solid $medium-gray;
+  }
+
+  li {
+    border-bottom: 1px solid $medium-gray;
+  }
+
+  a {
+    line-height: rem-calc(21);
+    font-size:  0.875rem;
+    font-weight: $global-weight-bold;
+    border-left: 0.5rem solid transparent;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+
+  .is-active {
+    background-color: $light-gray;
+    border-left: 0.5rem solid $dcp-yellow;
+
+    a {
+      color: $a11y-orange;
+      padding-left: 8px;
+    }
+  }
+}
+
+.page-nav--header {
+  color: $dark-gray;
+}
+
+// Override Sticky positioning on small, medium screens
+// @include breakpoint(medium down) {
+//   .page-nav > div > div:first-child  {
+//       padding: 0 !important;
+//   }
+//   .page-nav > div > div:last-child  { /* this is .sidebar */
+//       position: static !important;
+//       transform: none !important;
+//       width: auto !important;
+//   }
+// }
+//

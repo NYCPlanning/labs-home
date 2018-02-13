@@ -1,0 +1,57 @@
+// --------------------------------------------------
+// Logo
+// --------------------------------------------------
+
+$logo-height-small: rem-calc(36);
+$logo-height: rem-calc(48);
+$logo-padding: 0.625rem;
+
+.site-logo {
+  float: left;
+  padding: 0.75rem 0 0;
+  line-height: 1;
+  height: $logo-height-small + $logo-padding;
+  overflow: visible;
+
+  @include breakpoint(large) {
+    padding: $logo-padding 0 0;
+    height: $logo-height + $logo-padding;
+  }
+
+  img {
+    float: left;
+    height: $logo-height-small;
+    margin-right: $logo-padding;
+
+    @include breakpoint(large) {
+      height: $logo-height;
+    }
+  }
+
+  span {
+    font-size: rem-calc(48);
+    float: left;
+    position: relative;
+    top: rem-calc(-5);
+
+    @include breakpoint(large) {
+      font-size: rem-calc(64);
+      top: rem-calc(-7);
+    }
+
+    &.site-logo--l {
+    }
+    &.site-logo--a {
+      margin-right: -0.05em;
+    }
+    &.site-logo--b {
+      margin-right: -0.03em;
+    }
+    &.site-logo--s {
+    }
+  }
+}
+
+.footer-logo img {
+  height: rem-calc(48);
+}
