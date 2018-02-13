@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Link from 'gatsby-link';
 import FontAwesome from 'react-fontawesome'
-
+import fetch from 'node-fetch';
 
 import Hero from '../components/hero'
 import Project from './project';
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
     <div className="cell medium-6" key={project.name}>
       <Link to={`/projects/${project.slug}/`} className="card-link">
         <div className="card no-margin text-center">
-          { url && <img src={url} alt={project.name} /> }
+          { url && <img src={url} alt={project.name} className="project-card"/> }
           <div className="card-section">
             <h3>{project.name}</h3>
             <p>{project.tagline}</p>

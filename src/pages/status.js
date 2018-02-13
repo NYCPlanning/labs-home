@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Link from 'gatsby-link';
 import FontAwesome from 'react-fontawesome';
 import Moment from 'react-moment';
+import fetch from 'node-fetch';
 
 
 import Hero from '../components/hero'
