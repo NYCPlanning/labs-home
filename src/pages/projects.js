@@ -33,17 +33,33 @@ const DevCard = ({ project }) => {
 
   const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
 
+  let devCardTitle = null;
+  if (project.github) {
+    devCardTitle = (
+      <a href={project.github} target="_blank">
+        {project.name}
+        <br/><small>{project.github ? project.github.split('github.com/')[1] : null}</small>
+      </a>
+    );
+  } else {
+    devCardTitle = <span className="dark-gray">{project.name}</span>;
+  }
+
+  let devCardIcon = null;
+  if (project.github) {
+    devCardIcon = <a href={project.github} target="_blank"><FontAwesome name='github' size='2x' /></a>;
+  } else {
+    devCardIcon = <FontAwesome name='github' size='2x' className="medium-gray" />;
+  }
+
   return (
       <div className="media-object">
       <div className="media-object-section" style={{paddingRight:'1rem',opacity: '0.7'}}>
-        <a href={project.github} target="_blank"><FontAwesome name='github ' size='2x' /></a>
+        {devCardIcon}
       </div>
       <div className="media-object-section">
         <h4 className="header-small" style={{marginBottom:'0.5rem'}}>
-          <a href={project.github} target="_blank">
-            {project.name}
-            <br/><small>{project.github ? project.github.split('github.com/')[1] : null}</small>
-          </a>
+          {devCardTitle}
         </h4>
          <p className="text-small">
            {project.tagline}
