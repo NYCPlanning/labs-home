@@ -1,6 +1,8 @@
-import React from 'react'
-import moment from 'moment'
-import FontAwesome from 'react-fontawesome'
+import React from 'react';
+import moment from 'moment';
+import FontAwesome from 'react-fontawesome';
+import fetch from 'node-fetch';
+
 
 class BlogPosts extends React.Component {
   constructor(props) {
