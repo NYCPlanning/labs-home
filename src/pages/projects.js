@@ -75,11 +75,13 @@ class ProjectsPage extends React.Component {
 
     this.state = {
       projects: [],
+      withFor: 'with',
     };
   }
 
   componentDidMount() {
     this.fetchProjectsData();
+    this.toggleWithFor();
   }
 
   fetchProjectsData() {
@@ -90,8 +92,17 @@ class ProjectsPage extends React.Component {
       });
   }
 
+  toggleWithFor() {
+    setInterval(() => {
+      const withFor = (this.state.withFor === 'with') ? 'for' : 'with';
+      this.setState({ withFor });
+    }, 5000)
+  }
+
   render() {
-    const { projects } = this.state;
+    const { projects, withFor } = this.state;
+
+    const tagline = `We design, prototype, and build lightweight & open technology tools ${withFor} planners.`;
 
     const projectCards = () => {
       const featuredProjects = projects.filter(d => d.type === 'feature')
@@ -154,7 +165,7 @@ class ProjectsPage extends React.Component {
                 <div className="main">
                   <Hero
                     title="Projects"
-                    tagline="We design, prototype, and build lightweight & open technology tools for planners."
+                    tagline={tagline}
                   />
                   <div className="grid-container">
                     <div className="grid-x grid-margin-x grid-padding-y">
