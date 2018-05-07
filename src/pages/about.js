@@ -85,6 +85,13 @@ const AboutPage = () => (
              <p>Matt joined Planning Labs as a founding member in July, 2017 after creating digital solutions for the City of Boston’s Summer Youth Employment Program. He also helped establish the Metropolitan Area Planning Council’s <a href="http://data.mapc.org">Digital Services</a> division, the first of its kind in regional planning.</p>
           </div>
         </div>
+        <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Intern</h3>
+        <div className="media-object">
+          <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
+          <div className="media-object-section">
+             <p>Taylor is a GIS analyst currently acquiring a Certificate degree in GIS and Design from Pratt Institute. Originally an environmental geologist focused on urban sustainability, she is now expanding her mapping and data analysis tools to contribute to city planning projects.</p>
+          </div>
+        </div>
         <hr/>
         <h2 id="history" data-magellan-target="history">History</h2>
         <p>Planning Labs was established in June 2017 by DCP civic technologist Chris Whong, with planning and guidance from Danny Fuchs, Director of Capital Planning, Hassan Adekoya, CIO, and Jon Kaufman, COO. After a year of experimentation and success building the <a href="https://capitalplanning.nyc">Capital Planning Platform</a> using a 100% open source stack, a pitch was made to institutionalize modern development practices in the agency by establishing a service delivery unit within the Information Technology Division. Planning Labs’ mission would be to build lightweight impactful tools with the agency’s divisions as clients, and to be open, vocal, and inclusive about the modern technologies and processes used.</p>
