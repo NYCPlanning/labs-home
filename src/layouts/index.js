@@ -18,6 +18,8 @@ const TemplateWrapper = ({ children }) => (
     >
       <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+      
       <script type="text/javascript"src="js/track.js"></script>
       <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
     </Helmet>
