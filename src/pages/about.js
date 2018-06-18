@@ -89,7 +89,7 @@ const AboutPage = () => (
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
           <div className="media-object-section">
-             <p>Taylor is a GIS analyst currently acquiring a Certificate degree in GIS and Design from Pratt Institute. Originally an environmental geologist focused on urban sustainability, she is now expanding her mapping and data analysis tools to contribute to city planning projects.</p>
+             <p>Taylor is a GIS analyst currently acquiring a Certificate degree in GIS and Design from Pratt Institute. Originally an environmental geologist focused on urban sustainability, she is now expanding her mapping and data analysis skillsets to contribute to city planning projects.</p>
           </div>
         </div>
         <hr/>
