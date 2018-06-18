@@ -85,7 +85,7 @@ const AboutPage = () => (
              <p>Matt joined Planning Labs as a founding member in July, 2017 after creating digital solutions for the City of Boston’s Summer Youth Employment Program. He also helped establish the Metropolitan Area Planning Council’s <a href="http://data.mapc.org">Digital Services</a> division, the first of its kind in regional planning.</p>
           </div>
         </div>
-        <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Intern</h3>
+        <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer Intern</h3>
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
           <div className="media-object-section">
