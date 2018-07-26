@@ -10,7 +10,7 @@
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "latest",
-    "hoek": "^4.2.1",
+    "hoek": "^5.0.3",
     "moment": "^2.20.1",
     "motion-ui": "^1.2.3",
     "react-fontawesome": "^1.6.1",
