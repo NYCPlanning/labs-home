@@ -12,7 +12,7 @@
     "gatsby-plugin-sass": "latest",
     "hoek": "^4.2.1",
     "moment": "^2.20.1",
-    "motion-ui": "^1.2.3",
+    "motion-ui": "^2.0.3",
     "react-fontawesome": "^1.6.1",
     "react-moment": "^0.7.9",
     "react-router-dom": "^4.2.2",
