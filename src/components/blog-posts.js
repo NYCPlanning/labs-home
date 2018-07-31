@@ -26,6 +26,7 @@ class BlogPosts extends React.Component {
         <div key={post.created} className="cell large-auto">
            <span className="post-date">{moment(post.created).format('LL')}</span>
            <h1 className="header-medium"><a href={post.url}>{post.title}</a></h1>
+           <p><a href={post.url}><img src={post.image} /></a></p>
            <p className="post-excerpt">{post.description}</p>
            <a className="button small " href={post.url} target="_blank">Read more <FontAwesome name='external-link' /></a>
         </div>
