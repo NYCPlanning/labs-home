@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 import Hero from '../components/hero'
 import Project from './project';
 
-const projectsUri = 'https://api.planninglabs.nyc/projects';
+const projectsUri = 'https://home-api.planninglabs.nyc/projects';
 
 const ProjectCard = ({ project }) => {
 
