@@ -85,6 +85,13 @@ const AboutPage = () => (
              <p>Matt joined Planning Labs as a founding member in July, 2017 after creating digital solutions for the City of Boston’s Summer Youth Employment Program. He also helped establish the Metropolitan Area Planning Council’s <a href="http://data.mapc.org">Digital Services</a> division, the first of its kind in regional planning.</p>
           </div>
         </div>
+        <h3 id="hannah-kates-product-manager">Hannah Kates: Product Manager</h3>
+        <div className="media-object">
+          <div className="media-object-section"> <img className="thumbnail avatar" src="https://raw.githubusercontent.com/hannahkates/hannahkates.github.io/master/img/headshot.jpg"/> </div>
+          <div className="media-object-section">
+             <p>Hannah joined Labs in Sept 2018, after working for two years in NYC Planning's Capital Planning division where she led planning/process reforms focused on siting City facilities. She also developed core NYC Planning databases and product managed the creation of the <a href="http://capitalplanning.nyc.gov/facilities" target="_blank">NYC Facilities Explorer</a>.</p>
+          </div>
+        </div>
         <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer Intern</h3>
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
