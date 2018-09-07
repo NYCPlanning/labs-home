@@ -68,14 +68,14 @@ const AboutPage = () => (
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/3057855429/49cff02ea1ea88993d7edadd8b027982_400x400.jpeg"/> </div>
           <div className="media-object-section">
-             <p>Chris developed the concept for Planning Labs in 2017, after leading the development of modern, open mapping applications in DCP's Capital Planning Division. He is an urbanist, open data advocate, civic technologist, and a former Code for America Brigade leader. </p>
+             <p>Chris developed the concept for Planning Labs in 2017, after leading the development of modern, open mapping applications in DCP’s Capital Planning Division. He is an urbanist, open data advocate, civic technologist, and a former Code for America Brigade leader. </p>
           </div>
         </div>
         <h3 id="andy-cochran-designer">Andy Cochran: Designer</h3>
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg"/> </div>
           <div className="media-object-section">
-             <p>Andy joined the founding team of Planning Labs in July, 2017 after implementing New York City Council's plan for digital inclusion and open government. As Design &amp; Creative Director at <a href="http://openplans.org/">OpenPlans</a>, he built collaborative mapping services and other civic engagement tools.</p>
+             <p>Andy joined the founding team of Planning Labs in July, 2017 after implementing New York City Council’s plan for digital inclusion and open government. As Design &amp; Creative Director at <a href="http://openplans.org/">OpenPlans</a>, he built collaborative mapping services and other civic engagement tools.</p>
           </div>
         </div>
         <h3 id="matt-gardner-developer">Matt Gardner: Developer</h3>
@@ -89,14 +89,14 @@ const AboutPage = () => (
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://raw.githubusercontent.com/hannahkates/hannahkates.github.io/master/img/headshot.jpg"/> </div>
           <div className="media-object-section">
-             <p>Hannah joined Labs in Sept 2018, after working for two years in NYC Planning's Capital Planning division where she led planning/process reforms focused on siting City facilities. She also developed core NYC Planning databases and product managed the creation of the <a href="http://capitalplanning.nyc.gov/facilities" target="_blank">NYC Facilities Explorer</a>.</p>
+             <p>Hannah joined Labs in Sept 2018, after working for two years in NYC Planning’s Capital Planning division where she led planning/process reforms focused on siting City facilities. She also developed core NYC Planning databases and product managed the creation of the <a href="http://capitalplanning.nyc.gov/facilities" target="_blank">NYC Facilities Explorer</a>.</p>
           </div>
         </div>
         <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer Intern</h3>
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
           <div className="media-object-section">
-             <p>Taylor is a GIS analyst currently acquiring a Certificate degree in GIS and Design from Pratt Institute. Originally an environmental geologist focused on urban sustainability, she is now expanding her mapping and data analysis skillsets to contribute to city planning projects.</p>
+             <p>Taylor is a GIS analyst currently acquiring a Certificate degree in GIS and Design from Pratt Institute. Originally an environmental geologist focused on urban sustainability, she is now expanding her mapping and data analysis skillsets to contribute to City planning projects.</p>
           </div>
         </div>
         <hr/>
