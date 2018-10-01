@@ -120,6 +120,15 @@ const AboutPage = () => (
         </div>
       </div>
       <div className="cell large-6">
+        <h3 id="hannah-kates-product-manager">Jonathan Pichot: Product Manager & Developer</h3>
+        <div className="media-object">
+          <div className="media-object-section"> <img className="thumbnail avatar" src="/img/pichot.jpg"/> </div>
+          <div className="media-object-section">
+             <p>Jonathan joined Planning Labs in Oct 2018. He began his career as a developer in a number of agencies. In 2012, he founded the Code for America brigade in Grand Rapids, Michigan and had his first taste of public service with the city's Downtown Development Authority. He believes in bold and transformative public servants.</p>
+          </div>
+        </div>
+      </div>
+      <div className="cell large-6">
         <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer Intern</h3>
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
