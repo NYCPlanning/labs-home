@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Hero from '../components/hero'
+import Hero from '../components/hero';
 
 const SubmitIdeaPage = () => (
   <div className="idea">
@@ -16,6 +16,6 @@ const SubmitIdeaPage = () => (
     />
 
   </div>
-)
+);
 
-export default SubmitIdeaPage
+export default SubmitIdeaPage;
