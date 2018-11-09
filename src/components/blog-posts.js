@@ -32,13 +32,13 @@ class BlogPosts extends React.Component {
         </h1>
         <p>
           <a href={post.url}>
-            <img src={post.image} />
+            <img src={post.image} alt="blog post" />
           </a>
         </p>
         <p className="post-excerpt">
           {post.description}
         </p>
-        <a className="button small " href={post.url} target="_blank">
+        <a className="button small " href={post.url} target="_blank" rel="noopener noreferrer">
 Read more
           <FontAwesome name="external-link" />
         </a>

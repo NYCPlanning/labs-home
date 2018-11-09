@@ -10,7 +10,7 @@ class Header extends React.Component {
 
   toggleMenu() {
     this.setState({
-      menuOpen: !this.state.menuOpen,
+      menuOpen: !this.state.menuOpen, // eslint-disable-line
     });
   }
 

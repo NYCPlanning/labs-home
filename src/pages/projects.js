@@ -33,12 +33,10 @@ const ProjectCard = ({ project }) => {
 };
 
 const DevCard = ({ project }) => {
-  const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
-
   let devCardTitle = null;
   if (project.github) {
     devCardTitle = (
-      <a href={project.github} target="_blank">
+      <a href={project.github} target="_blank" rel="noopener noreferrer">
         {project.name}
         <br />
         <small>
@@ -57,7 +55,7 @@ const DevCard = ({ project }) => {
   let devCardIcon = null;
   if (project.github) {
     devCardIcon = (
-      <a href={project.github} target="_blank">
+      <a href={project.github} target="_blank" rel="noopener noreferrer">
         <FontAwesome name="github" size="2x" />
       </a>
     );
@@ -109,7 +107,7 @@ class ProjectsPage extends React.Component {
     const projectCards = () => {
       const featuredProjects = projects.filter(d => d.type === 'feature');
       const cards = featuredProjects
-        .map((project, i) => <ProjectCard key={i} project={project} />);
+        .map((project, i) => <ProjectCard key={i} project={project} />); // eslint-disable-line
 
       return (
         <div className="grid-x grid-margin-x grid-margin-y">
@@ -121,7 +119,7 @@ class ProjectsPage extends React.Component {
     const devCards = () => {
       const devProjects = projects.filter(d => d.type === 'resource');
       const cards = devProjects
-        .map((project, i) => <DevCard key={i} project={project} />);
+        .map((project, i) => <DevCard key={i} project={project} />); // eslint-disable-line
 
       return (
         <div>
@@ -134,7 +132,7 @@ class ProjectsPage extends React.Component {
     const currentCards = () => {
       const currentProjects = projects.filter(d => d.type === 'current');
       const cards = currentProjects
-        .map((project, i) => <DevCard key={i} project={project} />);
+        .map((project, i) => <DevCard key={i} project={project} />); // eslint-disable-line
 
       return (
         <div>
@@ -164,7 +162,7 @@ class ProjectsPage extends React.Component {
           path="/projects"
           exact
           render={
-            transition => (
+            () => (
               <div className="main">
                 <Hero
                   title="Projects"
@@ -210,8 +208,8 @@ Developer Resources
           render={
             (transition) => {
               const { match: { params: { id } } } = transition;
-              const project = projects.find((project) => {
-                const { slug } = project;
+              const project = projects.find((thisProject) => {
+                const { slug } = thisProject;
                 return slug === id;
               });
               return (

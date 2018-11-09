@@ -1,6 +1,4 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import Link from 'gatsby-link';
 import FontAwesome from 'react-fontawesome';
 import Moment from 'react-moment';
 import fetch from 'node-fetch';
@@ -12,7 +10,7 @@ const statusURI = 'https://updown.io/api/checks?api-key=ro-nzbag1HJmfQBkkLjF12d'
 
 const StatusCard = ({ status }) => {
   const {
-    token, url, alias, uptime, down, last_check_at, next_check_at, ssl,
+    token, alias, uptime, down, last_check_at:lastCheckAt, next_check_at:nextCheckAt, ssl, // eslint-disable-line
   } = status;
 
   const { valid: sslValid } = ssl;
@@ -22,7 +20,7 @@ const StatusCard = ({ status }) => {
       <div className="grid-x grid-margin-x text-small">
         <div className="cell">
           <p className="float-right">
-            <a href={`https://updown.io/${token}`} target="_blank">
+            <a href={`https://updown.io/${token}`} target="_blank" rel="noopener noreferrer">
               <FontAwesome name="external-link" fixedWidth />
               {' '}
 View full report
@@ -39,14 +37,14 @@ View full report
           <span className="nowrap">
 Last Check:
             <Moment format="k:mm:ss">
-              {last_check_at}
+              {lastCheckAt}
             </Moment>
             <br />
           </span>
           <span className="nowrap">
 Next Check:
             <Moment format="k:mm:ss">
-              {next_check_at}
+              {nextCheckAt}
             </Moment>
           </span>
         </div>
@@ -73,27 +71,23 @@ class StatusPage extends React.Component {
   }
 
   componentDidMount() {
-    console.log('didmount!');
     this.fetchStatusData();
   }
 
   fetchStatusData() {
-    console.log('fetching!');
     return fetch(statusURI)
       .then(response => response.json())
       .then((statuses) => {
-        console.log(statuses);
         this.setState({ statuses });
       });
   }
 
   render() {
     const { statuses } = this.state;
-    console.log(statuses);
 
     const statusCards = () => {
       const cards = statuses
-        .map((status, i) => <StatusCard key={i} status={status} />);
+        .map((status, i) => <StatusCard key={i} status={status} />); // eslint-disable-line
 
       return (
         <div className="grid-x grid-margin-x">

@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
-
 import Hero from '../components/hero';
 
 
@@ -16,7 +14,7 @@ const ContactPage = () => (
 Let’s work together to tackle your division’s urban planning technology&nbsp;problems.
           </h2>
           <p>
-Email us, or swing by our cubes in the IT Division at 120 Broadway, 30th floor. We'll coordinate to document and understand the problem you're trying to solve, and determine whether it is a good fit in scope and subject matter for a Labs project.
+Email us, or swing by our cubes in the IT Division at 120 Broadway, 30th floor. We&#39;ll coordinate to document and understand the problem you&#39;re trying to solve, and determine whether it is a good fit in scope and subject matter for a Labs project.
             {' '}
           </p>
         </div>

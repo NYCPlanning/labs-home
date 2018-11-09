@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { StickyContainer, Sticky } from 'react-sticky';
 import Scrollspy from 'react-scrollspy';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 import Hero from '../components/hero';
 

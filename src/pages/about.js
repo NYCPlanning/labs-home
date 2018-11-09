@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
-
 import Hero from '../components/hero';
 
 import {
@@ -136,7 +134,7 @@ Chris Whong: Director
           <div className="media-object">
             <div className="media-object-section">
               {' '}
-              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/3057855429/49cff02ea1ea88993d7edadd8b027982_400x400.jpeg" />
+              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/3057855429/49cff02ea1ea88993d7edadd8b027982_400x400.jpeg" alt="Chris Whong, Director" />
               {' '}
             </div>
             <div className="media-object-section">
@@ -154,7 +152,7 @@ Andy Cochran: Designer
           <div className="media-object">
             <div className="media-object-section">
               {' '}
-              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg" />
+              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg" alt="Andy Cochran, Designer" />
               {' '}
             </div>
             <div className="media-object-section">
@@ -175,13 +173,13 @@ Matt Gardner: Developer
           <div className="media-object">
             <div className="media-object-section">
               {' '}
-              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/598597497141997568/zR8hc1fd_400x400.jpg" />
+              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/598597497141997568/zR8hc1fd_400x400.jpg" alt="Matt Gardner, Developer" />
               {' '}
             </div>
             <div className="media-object-section">
               <p>
 Matt joined Planning Labs as a founding member in July, 2017 after creating digital solutions for the City of Boston’s Summer Youth Employment Program. He also helped establish the Metropolitan Area Planning Council’s
-                <a href="http://data.mapc.org" target="_blank">
+                <a href="http://data.mapc.org" target="_blank" rel="noopener noreferrer">
 Digital Services
                 </a>
                 {' '}
@@ -197,13 +195,13 @@ Hannah Kates: Product Manager
           <div className="media-object">
             <div className="media-object-section">
               {' '}
-              <img className="thumbnail avatar" src="https://raw.githubusercontent.com/hannahkates/hannahkates.github.io/master/img/headshot.jpg" />
+              <img className="thumbnail avatar" src="https://raw.githubusercontent.com/hannahkates/hannahkates.github.io/master/img/headshot.jpg" alt="Hannah Kates, Product Manager" />
               {' '}
             </div>
             <div className="media-object-section">
               <p>
 Hannah joined Labs in Sept 2018, after working for two years in NYC Planning’s Capital Planning division where she led planning/process reforms focused on siting City facilities. She also developed core NYC Planning databases and product managed the creation of the
-                <a href="http://capitalplanning.nyc.gov/facilities" target="_blank">
+                <a href="http://capitalplanning.nyc.gov/facilities" target="_blank" rel="noopener noreferrer">
 NYC Facilities Explorer
                 </a>
 .
@@ -218,7 +216,7 @@ Taylor McGinnis: Developer Intern
           <div className="media-object">
             <div className="media-object-section">
               {' '}
-              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg" />
+              <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg" alt="Taylor McGinnis, Developer Intern" />
               {' '}
             </div>
             <div className="media-object-section">
@@ -239,7 +237,7 @@ History
           </h2>
           <p>
 Planning Labs was established in June 2017 by DCP civic technologist Chris Whong, with planning and guidance from Danny Fuchs, Director of Capital Planning, Hassan Adekoya, CIO, and Jon Kaufman, COO. After a year of experimentation and success building the
-            <a href="https://capitalplanning.nyc" target="_blank">
+            <a href="https://capitalplanning.nyc" target="_blank" rel="noopener noreferrer">
 Capital Planning Platform
             </a>
             {' '}

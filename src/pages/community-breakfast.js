@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import mapboxgl from 'mapbox-gl';
 
 import Hero from '../components/hero';
@@ -24,26 +23,26 @@ class CommunityBreakfastPage extends React.Component {
       window.map = map;  // eslint-disable-line
 
       const fetches = [
-        fetch('data/nycd.json'),
-        fetch('data/community-breakfast.json'),
+        fetch('data/nycd.json'), // eslint-disable-line
+        fetch('data/community-breakfast.json'), // eslint-disable-line
       ];
 
       Promise.all(fetches)
         .then(([districts, meta]) => Promise.all([districts.json(), meta.json()]))
         .then(([districts, meta]) => {
           // join breakfast meta properties to districts geojson
-          districts.features = districts.features.map((feature) => {
+          districts.features = districts.features.map((feature) => { // eslint-disable-line
             // check to see if meta for this BoroCD exists
             const match = meta.find(d => d.BoroCD === feature.properties.BoroCD);
 
             if (match) {
-              feature.properties = {
+              feature.properties = { // eslint-disable-line
                 visited: true,
                 ...match,
                 ...feature.properties,
               };
             } else {
-              feature.properties = {
+              feature.properties = { // eslint-disable-line
                 visited: false,
                 ...feature.properties,
               };
@@ -115,7 +114,7 @@ class CommunityBreakfastPage extends React.Component {
 Community Breakfast
           </h2>
           <p>
-We&apos;re on a five-year mission to hold a team breakfast in each of NYC's 59 community districts. We try to find a community ambassador who can show us around and comment on the neighborhood's character, history, and planning context.
+We&apos;re on a five-year mission to hold a team breakfast in each of NYC&apos;s 59 community districts. We try to find a community ambassador who can show us around and comment on the neighborhood&apos;s character, history, and planning context.
           </p>
           <div className="grid-x grid-padding-x">
             <div className="cell large-8" id="page-content">
