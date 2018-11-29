@@ -124,7 +124,7 @@ const AboutPage = () => (
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
           <div className="media-object-section">
-             <p>Taylor is a GIS analyst currently acquiring a Certificate degree in GIS and Design from Pratt Institute. Originally an environmental geologist focused on urban sustainability, she is now expanding her mapping and data analysis skillsets to contribute to City planning projects.</p>
+             <p>Taylor joined Planning Labs in June 2018, after creating data visualizations as a Fellow for the Pratt Center for Community Development. Originally introduced to mapping as an environmental geologist, she now works as a developer and web mapper focused on open data and city planning issues.</p>
           </div>
         </div>
       </div>
