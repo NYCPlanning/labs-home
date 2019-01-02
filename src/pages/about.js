@@ -128,6 +128,16 @@ const AboutPage = () => (
           </div>
         </div>
       </div>
+      <div className="cell large-6">
+        <h3 id="julia-hogan-developer">Julia Hogan: Developer</h3>
+        <div className="media-object">
+          <div className="media-object-section"> <img className="thumbnail avatar" src="https://photos.google.com/share/AF1QipMmwN3TNtNmW2K_fF4l5nkY1apifOhlmeii9wPS3VRgxlGIyeuGwCrVFL4pIzE0aA/photo/AF1QipNd4CJ6e-2DLXPqW3TmLH_UV3ILJWrvF_7UKqBD?key=NS1ub2xrVldnaFZpdEhkNGUzY05uMFNacE1lSTBB"/> </div>
+          <div className="media-object-section">
+             <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She's passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <hr/>
