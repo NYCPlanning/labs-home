@@ -120,7 +120,7 @@ const AboutPage = () => (
         </div>
       </div>
       <div className="cell large-6">
-        <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer Intern</h3>
+        <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer</h3>
         <div className="media-object">
           <div className="media-object-section"> <img className="thumbnail avatar" src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"/> </div>
           <div className="media-object-section">
