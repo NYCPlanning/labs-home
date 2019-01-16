@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import NavLinks from './nav-links'
+import React from 'react';
+import Link from 'gatsby-link';
+import NavLinks from './nav-links';
 
 const Footer = () => (
   <footer
@@ -66,6 +66,6 @@ const Footer = () => (
       </nav>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

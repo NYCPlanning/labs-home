@@ -1,12 +1,12 @@
-import React from 'react'
-import Layout from '../components/layout'
-import FontAwesome from 'react-fontawesome'
-import Moment from 'react-moment'
-import fetch from 'node-fetch'
+import React from 'react';
+import FontAwesome from 'react-fontawesome';
+import Moment from 'react-moment';
+import fetch from 'node-fetch';
+import Layout from '../components/layout';
 
-import Hero from '../components/hero'
+import Hero from '../components/hero';
 
-const statusURI = 'https://updown.io/api/checks?api-key=ro-nzbag1HJmfQBkkLjF12d'
+const statusURI = 'https://updown.io/api/checks?api-key=ro-nzbag1HJmfQBkkLjF12d';
 
 const StatusCard = ({ status }) => {
   const {
@@ -14,19 +14,21 @@ const StatusCard = ({ status }) => {
     alias,
     uptime,
     down,
-    last_check_at,
-    next_check_at,
+    last_check_at: lastCheckAt,
+    next_check_at: nextCheckAt,
     ssl,
-  } = status
+  } = status;
 
-  const { valid: sslValid } = ssl
+  const { valid: sslValid } = ssl;
   return (
     <div className="callout cell medium-6" key={status.token}>
       <div className="grid-x grid-margin-x text-small">
         <div className="cell">
           <p className="float-right">
             <a href={`https://updown.io/${token}`} target="_blank" rel="noopener noreferrer">
-              <FontAwesome name="external-link" fixedWidth={true} /> View full
+              <FontAwesome name="external-link" fixedWidth />
+              {' '}
+View full
               report
             </a>
           </p>
@@ -34,7 +36,7 @@ const StatusCard = ({ status }) => {
             <FontAwesome
               className={down ? 'status-down' : 'status-up'}
               name="circle"
-              fixedWidth={true}
+              fixedWidth
             />
             &nbsp;
             {alias}
@@ -44,16 +46,20 @@ const StatusCard = ({ status }) => {
           <FontAwesome
             name="clock-o"
             size="2x"
-            fixedWidth={true}
+            fixedWidth
             className="float-left"
             style={{ margin: '0.25rem 0.5rem 0.5rem 0', color: '#888' }}
           />
           <span className="nowrap">
-            Last Check: <Moment format="k:mm:ss">{last_check_at}</Moment>
+            Last Check:
+            {' '}
+            <Moment format="k:mm:ss">{lastCheckAt}</Moment>
             <br />
           </span>
           <span className="nowrap">
-            Next Check: <Moment format="k:mm:ss">{next_check_at}</Moment>
+            Next Check:
+            {' '}
+            <Moment format="k:mm:ss">{nextCheckAt}</Moment>
           </span>
         </div>
         <div className="cell large-6">
@@ -61,7 +67,8 @@ const StatusCard = ({ status }) => {
             name="bar-chart"
             style={{ margin: '-0.25rem 0.5rem 0.5rem 0', color: '#888' }}
           />
-          {uptime}%&nbsp;Uptime
+          {uptime}
+%&nbsp;Uptime
           <br />
           <FontAwesome
             name="certificate"
@@ -71,44 +78,39 @@ const StatusCard = ({ status }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 class StatusPage extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor (props) {
+    super(props);
 
     this.state = {
       statuses: [],
-    }
+    };
   }
 
-  componentDidMount() {
-    console.log('didmount!')
-    this.fetchStatusData()
+  componentDidMount () {
+    this.fetchStatusData();
   }
 
-  fetchStatusData() {
-    console.log('fetching!')
+  fetchStatusData () {
     return fetch(statusURI)
       .then(response => response.json())
-      .then(statuses => {
-        console.log(statuses)
-        this.setState({ statuses })
-      })
+      .then((statuses) => {
+        this.setState({ statuses });
+      });
   }
 
-  render() {
-    const { statuses } = this.state
-    console.log(statuses)
-
+  render () {
+    const { statuses } = this.state;
     const statusCards = () => {
-      const cards = statuses.map((status, i) => (
-        <StatusCard key={i} status={status} />
-      ))
+      const cards = statuses.map(status => (
+        <StatusCard key={status.token} status={status} />
+      ));
 
-      return <div className="grid-x grid-margin-x">{cards}</div>
-    }
+      return <div className="grid-x grid-margin-x">{cards}</div>;
+    };
 
     const spinner = () => (
       <div
@@ -120,9 +122,9 @@ class StatusPage extends React.Component {
       >
         <FontAwesome name="refresh" size="3x" spin />
       </div>
-    )
+    );
 
-    const { length } = statuses
+    const { length } = statuses;
 
     return (
       <Layout>
@@ -136,8 +138,8 @@ class StatusPage extends React.Component {
           </div>
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default StatusPage
+export default StatusPage;

@@ -1,5 +1,5 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
 
 const SubmitIdeaPage = () => (
   <Layout>
@@ -15,6 +15,6 @@ const SubmitIdeaPage = () => (
       />
     </div>
   </Layout>
-)
+);
 
-export default SubmitIdeaPage
+export default SubmitIdeaPage;

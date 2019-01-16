@@ -1,7 +1,7 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
 
-import Hero from '../components/hero'
+import Hero from '../components/hero';
 
 const ContactPage = () => (
   <Layout>
@@ -16,16 +16,18 @@ const ContactPage = () => (
             </h2>
             <p>
               Email us, or swing by our cubes in the IT Division at 120
-              Broadway, 30th floor. We'll coordinate to document and understand
-              the problem you're trying to solve, and determine whether it is a
-              good fit in scope and subject matter for a Labs project.{' '}
+              Broadway, 30th floor. We&apos;ll coordinate to document and understand
+              the problem you&apos;re trying to solve, and determine whether it is a
+              good fit in scope and subject matter for a Labs project.
+              {' '}
             </p>
           </div>
           <div className="cell large-4">
             <ul>
               <li>
                 <p>
-                  Email us at{' '}
+                  Email us at
+                  {' '}
                   <a href="mailto:labs_dl@planning.nyc.gov">
                     labs_dl@planning.nyc.gov
                   </a>
@@ -33,16 +35,19 @@ const ContactPage = () => (
               </li>
               <li>
                 <p>
-                  Follow{' '}
+                  Follow
+                  {' '}
                   <a href="https://twitter.com/nycplanninglabs">
                     @nycplanninglabs
-                  </a>{' '}
+                  </a>
+                  {' '}
                   on Twitter
                 </p>
               </li>
               <li>
                 <p>
-                  Contribute to{' '}
+                  Contribute to
+                  {' '}
                   <a href="https://github.com/nycplanning">
                     NYCPlanning on GitHub
                   </a>
@@ -50,7 +55,9 @@ const ContactPage = () => (
               </li>
               <li>
                 <p>
-                  Subscribe to our blogs <a href="/feed.xml">RSS feed</a>
+                  Subscribe to our blogs
+                  {' '}
+                  <a href="/feed.xml">RSS feed</a>
                 </p>
               </li>
             </ul>
@@ -59,6 +66,6 @@ const ContactPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default ContactPage
+export default ContactPage;

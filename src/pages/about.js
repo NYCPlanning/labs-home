@@ -1,14 +1,14 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
 
-import Hero from '../components/hero'
+import Hero from '../components/hero';
 
 import {
   BookSVG,
   HandshakeSVG,
   DocumentSVG,
   AgileSVG,
-} from '../components/svg-icons'
+} from '../components/svg-icons';
 
 const AboutPage = () => (
   <Layout>
@@ -27,17 +27,21 @@ const AboutPage = () => (
               What is Planning Labs?
             </h2>
             <p className="lead">
-              Planning Labs is a division of the{' '}
+              Planning Labs is a division of the
+              {' '}
               <a href="http://www1.nyc.gov/site/planning/">
                 NYC Department of City Planning
-              </a>{' '}
+              </a>
+              {' '}
               (DCP) that embraces open technology, agile development, and
               user-centered design to build impactful products with NYC’s Urban
               Planners.
             </p>
             <p>
-              We are inspired by the mission and successes of{' '}
-              <a href="https://18f.gsa.gov/">18F</a>, and are applying a similar
+              We are inspired by the mission and successes of
+              {' '}
+              <a href="https://18f.gsa.gov/">18F</a>
+, and are applying a similar
               philosophy at a much smaller scale within our agency.
             </p>
           </div>
@@ -123,12 +127,14 @@ const AboutPage = () => (
           </div>
         </div>
         <p className="text-center">
-          Read the full text of{' '}
+          Read the full text of
+          {' '}
           <strong>
             <a href="https://github.com/NYCPlanning/labs-charter">
               our charter
             </a>
-          </strong>{' '}
+          </strong>
+          {' '}
           on GitHub.
         </p>
         <hr />
@@ -146,7 +152,8 @@ const AboutPage = () => (
                   className="thumbnail avatar"
                   alt="Chris Whong"
                   src="https://pbs.twimg.com/profile_images/3057855429/49cff02ea1ea88993d7edadd8b027982_400x400.jpeg"
-                />{' '}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -154,7 +161,8 @@ const AboutPage = () => (
                   leading the development of modern, open mapping applications
                   in DCP’s Capital Planning Division. He is an urbanist, open
                   data advocate, civic technologist, and a former Code for
-                  America Brigade leader.{' '}
+                  America Brigade leader.
+                  {' '}
                 </p>
               </div>
             </div>
@@ -168,14 +176,18 @@ const AboutPage = () => (
                   className="thumbnail avatar"
                   alt="Andy Cochran"
                   src="https://pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg"
-                />{' '}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
                   Andy joined the founding team of Planning Labs in July, 2017
                   after implementing New York City Council’s plan for digital
                   inclusion and open government. As Design &amp; Creative
-                  Director at <a href="http://openplans.org/">OpenPlans</a>, he
+                  Director at
+                  {' '}
+                  <a href="http://openplans.org/">OpenPlans</a>
+, he
                   built collaborative mapping services and other civic
                   engagement tools.
                 </p>
@@ -191,17 +203,24 @@ const AboutPage = () => (
                   className="thumbnail avatar"
                   alt="Matt Gardner"
                   src="https://pbs.twimg.com/profile_images/598597497141997568/zR8hc1fd_400x400.jpg"
-                />{' '}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
                   Matt joined Planning Labs as a founding member in July, 2017
                   after creating digital solutions for the City of Boston’s
                   Summer Youth Employment Program. He also helped establish the
-                  Metropolitan Area Planning Council’s{' '}
-                  <a href="http://data.mapc.org" target="_blank" rel="noopener noreferrer">
+                  Metropolitan Area Planning Council’s
+                  {' '}
+                  <a
+                    href="http://data.mapc.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Digital Services
-                  </a>{' '}
+                  </a>
+                  {' '}
                   division, the first of its kind in regional planning.
                 </p>
               </div>
@@ -218,7 +237,8 @@ const AboutPage = () => (
                   className="thumbnail avatar"
                   alt="Hannah Kates"
                   src="https://raw.githubusercontent.com/hannahkates/hannahkates.github.io/master/img/headshot.jpg"
-                />{' '}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -226,7 +246,8 @@ const AboutPage = () => (
                   in NYC Planning’s Capital Planning division where she led
                   planning/process reforms focused on siting City facilities.
                   She also developed core NYC Planning databases and product
-                  managed the creation of the{' '}
+                  managed the creation of the
+                  {' '}
                   <a
                     href="http://capitalplanning.nyc.gov/facilities"
                     target="_blank"
@@ -248,7 +269,8 @@ const AboutPage = () => (
                   className="thumbnail avatar"
                   alt="Taylor McGinnis"
                   src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"
-                />{' '}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -284,10 +306,16 @@ const AboutPage = () => (
               technologist Chris Whong, with planning and guidance from Danny
               Fuchs, Director of Capital Planning, Hassan Adekoya, CIO, and Jon
               Kaufman, COO. After a year of experimentation and success building
-              the{' '}
-              <a href="https://capitalplanning.nyc" target="_blank" rel="noopener noreferrer">
+              the
+              {' '}
+              <a
+                href="https://capitalplanning.nyc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Capital Planning Platform
-              </a>{' '}
+              </a>
+              {' '}
               using a 100% open source stack, a pitch was made to
               institutionalize modern development practices in the agency by
               establishing a service delivery unit within the Information
@@ -301,6 +329,6 @@ const AboutPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default AboutPage
+export default AboutPage;

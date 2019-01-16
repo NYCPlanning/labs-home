@@ -1,18 +1,18 @@
-import React from 'react'
-import { Router, Link } from '@reach/router'
-import Layout from '../components/layout'
-import FontAwesome from 'react-fontawesome'
-import fetch from 'node-fetch'
+import React from 'react';
+import { Router, Link } from '@reach/router';
+import FontAwesome from 'react-fontawesome';
+import fetch from 'node-fetch';
+import Layout from '../components/layout';
 
-import Hero from '../components/hero'
-import Project from '../components/project'
+import Hero from '../components/hero';
+import Project from '../components/project';
 
-const projectsUri = 'https://home-api.planninglabs.nyc/projects'
+const projectsUri = 'https://home-api.planninglabs.nyc/projects';
 
 const ProjectCard = ({ project }) => {
   const url = project.thumbnail
     ? project.thumbnail[0].thumbnails.large.url
-    : null
+    : null;
 
   return (
     <div className="cell medium-6" key={project.name}>
@@ -26,11 +26,11 @@ const ProjectCard = ({ project }) => {
         </div>
       </Link>
     </div>
-  )
-}
+  );
+};
 
 const DevCard = ({ project }) => {
-  let devCardTitle = null
+  let devCardTitle = null;
   if (project.github) {
     devCardTitle = (
       <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -40,22 +40,22 @@ const DevCard = ({ project }) => {
           {project.github ? project.github.split('github.com/')[1] : null}
         </small>
       </a>
-    )
+    );
   } else {
-    devCardTitle = <span className="dark-gray">{project.name}</span>
+    devCardTitle = <span className="dark-gray">{project.name}</span>;
   }
 
-  let devCardIcon = null
+  let devCardIcon = null;
   if (project.github) {
     devCardIcon = (
       <a href={project.github} target="_blank" rel="noopener noreferrer">
         <FontAwesome name="github" size="2x" />
       </a>
-    )
+    );
   } else {
     devCardIcon = (
       <FontAwesome name="github" size="2x" className="medium-gray" />
-    )
+    );
   }
 
   return (
@@ -73,59 +73,59 @@ const DevCard = ({ project }) => {
         <p className="text-small">{project.tagline}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 class ProjectsPage extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor (props) {
+    super(props);
 
     this.state = {
       projects: [],
-    }
+    };
   }
 
-  componentDidMount() {
-    this.fetchProjectsData()
+  componentDidMount () {
+    this.fetchProjectsData();
   }
 
-  fetchProjectsData() {
+  fetchProjectsData () {
     return fetch(projectsUri)
       .then(response => response.json())
-      .then(projects => {
-        this.setState({ projects })
-      })
+      .then((projects) => {
+        this.setState({ projects });
+      });
   }
 
-  render() {
-    const { projects } = this.state
+  render () {
+    const { projects } = this.state;
 
     const projectCards = () => {
-      const featuredProjects = projects.filter(d => d.type === 'feature')
-      const cards = featuredProjects.map((project, i) => (
-        <ProjectCard key={i} project={project} />
-      ))
+      const featuredProjects = projects.filter(d => d.type === 'feature');
+      const cards = featuredProjects.map(project => (
+        <ProjectCard key={project.slug} project={project} />
+      ));
 
-      return <div className="grid-x grid-margin-x grid-margin-y">{cards}</div>
-    }
+      return <div className="grid-x grid-margin-x grid-margin-y">{cards}</div>;
+    };
 
     const devCards = () => {
-      const devProjects = projects.filter(d => d.type === 'resource')
-      const cards = devProjects.map((project, i) => (
-        <DevCard key={i} project={project} />
-      ))
+      const devProjects = projects.filter(d => d.type === 'resource');
+      const cards = devProjects.map(project => (
+        <DevCard key={project.slug} project={project} />
+      ));
 
-      return <div>{cards}</div>
-    }
+      return <div>{cards}</div>;
+    };
 
     const currentCards = () => {
-      const currentProjects = projects.filter(d => d.type === 'current')
-      const cards = currentProjects.map((project, i) => (
-        <DevCard key={i} project={project} />
-      ))
+      const currentProjects = projects.filter(d => d.type === 'current');
+      const cards = currentProjects.map(project => (
+        <DevCard key={project.slug} project={project} />
+      ));
 
-      return <div>{cards}</div>
-    }
+      return <div>{cards}</div>;
+    };
 
     const spinner = () => (
       <div
@@ -137,9 +137,9 @@ class ProjectsPage extends React.Component {
       >
         <FontAwesome name="refresh" size="3x" spin />
       </div>
-    )
+    );
 
-    const { length } = projects
+    const { length } = projects;
 
     const ProjectsGrid = () => (
       <div className="main">
@@ -177,15 +177,17 @@ class ProjectsPage extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
 
     const ProjectLayout = () => {
-      const { props } = this
-      const id = props.location.pathname.split('/')[2]
-      const project = projects.find(({ slug }) => slug === id)
+      const { props } = this;
+      const id = props.location.pathname.split('/')[2];
+      const project = projects.find(({ slug }) => slug === id);
 
-      return <Project project={project} />
-    }
+      return <Project project={project} />;
+    };
+
+    const { location } = this.props;
 
     return (
       <Layout>
@@ -193,12 +195,12 @@ class ProjectsPage extends React.Component {
           <ProjectsGrid path="/projects" />
           <ProjectLayout
             path="/projects/:projectid"
-            location={this.props.location}
+            location={location}
           />
         </Router>
       </Layout>
-    )
+    );
   }
 }
 
-export default ProjectsPage
+export default ProjectsPage;

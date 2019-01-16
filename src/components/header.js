@@ -1,27 +1,35 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import NavLinks from './nav-links'
+import React from 'react';
+import Link from 'gatsby-link';
+import NavLinks from './nav-links';
 
 class Header extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { menuOpen: false }
+    super(props);
+    this.state = { menuOpen: false };
   }
 
   toggleMenu() {
+    const { menuOpen } = this.state;
     this.setState({
-      menuOpen: !this.state.menuOpen,
-    })
+      menuOpen: !menuOpen,
+    });
   }
 
   closeMenu() {
     this.setState({
       menuOpen: false,
-    })
+    });
+  }
+
+  handleKeyDown(e) {
+    console.log(e.key)
+    if (e.key === 'Escape') {
+      this.closeMenu();
+    }
   }
 
   render() {
-    const { menuOpen } = this.state
+    const { menuOpen } = this.state;
 
     return (
       <header role="banner" className="site-header">
@@ -46,8 +54,9 @@ class Header extends React.Component {
               <button
                 className="responsive-nav-toggler"
                 onClick={() => {
-                  this.toggleMenu()
+                  this.toggleMenu();
                 }}
+                type="button"
               >
                 Menu
               </button>
@@ -55,11 +64,14 @@ class Header extends React.Component {
             <div
               id="responsive-menu"
               onClick={() => {
-                this.closeMenu()
+                this.closeMenu();
               }}
+              onKeyDown={this.handleKeyDown}
               className={`cell large-shrink ${
                 menuOpen ? '' : 'show-for-large'
               }`}
+              role="button"
+              tabIndex={0}
             >
               <nav role="navigation" className="header-nav">
                 <NavLinks ulClasses="menu vertical large-horizontal" />
@@ -68,8 +80,8 @@ class Header extends React.Component {
           </div>
         </div>
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

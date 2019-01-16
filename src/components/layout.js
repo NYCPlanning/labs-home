@@ -1,11 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from './header';
+import Footer from './footer';
 
-import '../scss/app.scss'
+import '../scss/app.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -38,10 +37,6 @@ const TemplateWrapper = ({ children }) => (
     {children}
     <Footer />
   </div>
-)
+);
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.object,
-}
-
-export default TemplateWrapper
+export default TemplateWrapper;

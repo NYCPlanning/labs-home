@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Layout from '../components/layout'
-import { StickyContainer, Sticky } from 'react-sticky'
-import Scrollspy from 'react-scrollspy'
+import React from 'react';
+import Link from 'gatsby-link';
+import { StickyContainer, Sticky } from 'react-sticky';
+import Scrollspy from 'react-scrollspy';
+import Layout from '../components/layout';
 
-import Hero from '../components/hero'
+import Hero from '../components/hero';
 
 const ProcessPage = () => (
   <Layout>
@@ -17,44 +17,42 @@ const ProcessPage = () => (
         <StickyContainer className="grid-x grid-padding-x">
           <div className="page-nav cell large-4 show-for-large">
             <Sticky>
-              {({ style }) => {
-                return (
-                  <div className="sticky" style={style}>
-                    <h4
-                      className="page-nav--header header-small"
-                      style={{ paddingTop: '1rem' }}
-                    >
+              {({ style }) => (
+                <div className="sticky" style={style}>
+                  <h4
+                    className="page-nav--header header-small"
+                    style={{ paddingTop: '1rem' }}
+                  >
                       From Idea to Pipeline
-                    </h4>
-                    <Scrollspy
-                      className="menu vertical"
-                      items={['step-1', 'step-2', 'step-3', 'step-4', 'step-5']}
-                      currentClassName="is-active"
-                    >
-                      <li>
-                        <Link to="/process/#step-1" className="">
+                  </h4>
+                  <Scrollspy
+                    className="menu vertical"
+                    items={['step-1', 'step-2', 'step-3', 'step-4', 'step-5']}
+                    currentClassName="is-active"
+                  >
+                    <li>
+                      <Link to="/process/#step-1" className="">
                           Step 1: Idea Submission
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/process/#step-2" className="">
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/process/#step-2" className="">
                           Step 2: Idea Vetting
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/process/#step-3" className="">
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/process/#step-3" className="">
                           Step 3: Project Selection
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/process/#step-4" className="">
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/process/#step-4" className="">
                           Step 4: Pipeline Posting
-                        </Link>
-                      </li>
-                    </Scrollspy>
-                  </div>
-                )
-              }}
+                      </Link>
+                    </li>
+                  </Scrollspy>
+                </div>
+              )}
             </Sticky>
           </div>
           <div className="cell large-8" id="page-content">
@@ -112,6 +110,6 @@ const ProcessPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default ProcessPage
+export default ProcessPage;
