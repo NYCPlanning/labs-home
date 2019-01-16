@@ -34,10 +34,11 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "predeploy": "npm test",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write  \"src/**/*.js\"",
     "test": "NODE_ENV=test node ./node_modules/mocha/bin/mocha ./test/**/*.js --exit",
-    "deploy": "sh scripts/deploy.sh"
+    "deploy": "npm run build"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
