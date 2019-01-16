@@ -286,9 +286,16 @@ const AboutPage = () => (
           <div className="cell large-6">
             <h3 id="julia-hogan-developer">Julia Hogan: Developer</h3>
             <div className="media-object">
-              <div className="media-object-section"> <img className="thumbnail avatar" src="https://lh3.googleusercontent.com/q3rBZTYfXLLGgkEapBqgETLN7yg6AF06K6oa_E63j7UvMMjngQAQuJ_rlPJsbjAhs_3MBQbOp__t4V3oR21gHSp_3WHKkjLeW57Exu35lujJ4t6Ih1wq_y0loCgC0q0SwaN14fIhRQF5lGVzRItw_JU-7w-NN2aHqfKPqi-nVPgqQW0-vz4Vg1iJECTbLhdtu5lobBP5YMJJj417-UHUkMF4gXc412_z6bg6EGROZ6qZ1wAGykNzwnpY17VZh_sogA5Nua4OZcveVaNzsTM9tHOHU2mq3Gr39NcqGwReqqU556gYMrs5xYTbACeBEVpzQodEXFnugvuK8udQxVeaajhwoGkfGoloCed5Kj8gIp-g2nGF9msKgrDJSEw7JGJ8dHSi3idNIaK9ZMa2JcH-HBPYwLLGqkRSFm35VlaOdDgeixzjayy7rsQEcNgsLvr0TduV38ydNSp9NWoQVKbv0nAOsz-RiUI9AdXnQq_GyVdSZ8p0C8t-vkPblZm6RjiI8ztMPFYsoTpHkZ2icmI8l-CNdXUcroIDAqGaVcNLoNnPSgKgPcmUTtD2PoQKBfHYzjT0ANJZeY77-lo6QgOcauNFJElU6ZaRjKvyLtrZsJyzxFImApqTuWgcEu6OdST30lU6JHopdaP9QFeJOSpNQdT_gXjfQKXUKEo9nhwAbEhRXkzozevQ4vIpARo_I2hTUOcrlbPKV-5Bi1rhtw=w2640-h1798-no"/></div>
               <div className="media-object-section">
-                 <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="https://lh3.googleusercontent.com/q3rBZTYfXLLGgkEapBqgETLN7yg6AF06K6oa_E63j7UvMMjngQAQuJ_rlPJsbjAhs_3MBQbOp__t4V3oR21gHSp_3WHKkjLeW57Exu35lujJ4t6Ih1wq_y0loCgC0q0SwaN14fIhRQF5lGVzRItw_JU-7w-NN2aHqfKPqi-nVPgqQW0-vz4Vg1iJECTbLhdtu5lobBP5YMJJj417-UHUkMF4gXc412_z6bg6EGROZ6qZ1wAGykNzwnpY17VZh_sogA5Nua4OZcveVaNzsTM9tHOHU2mq3Gr39NcqGwReqqU556gYMrs5xYTbACeBEVpzQodEXFnugvuK8udQxVeaajhwoGkfGoloCed5Kj8gIp-g2nGF9msKgrDJSEw7JGJ8dHSi3idNIaK9ZMa2JcH-HBPYwLLGqkRSFm35VlaOdDgeixzjayy7rsQEcNgsLvr0TduV38ydNSp9NWoQVKbv0nAOsz-RiUI9AdXnQq_GyVdSZ8p0C8t-vkPblZm6RjiI8ztMPFYsoTpHkZ2icmI8l-CNdXUcroIDAqGaVcNLoNnPSgKgPcmUTtD2PoQKBfHYzjT0ANJZeY77-lo6QgOcauNFJElU6ZaRjKvyLtrZsJyzxFImApqTuWgcEu6OdST30lU6JHopdaP9QFeJOSpNQdT_gXjfQKXUKEo9nhwAbEhRXkzozevQ4vIpARo_I2hTUOcrlbPKV-5Bi1rhtw=w2640-h1798-no"
+                  alt="Julia Hogan"
+                />
+              </div>
+              <div className="media-object-section">
+                <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
               </div>
             </div>
           </div>

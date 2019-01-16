@@ -22,7 +22,6 @@ class Header extends React.Component {
   }
 
   handleKeyDown(e) {
-    console.log(e.key)
     if (e.key === 'Escape') {
       this.closeMenu();
     }
