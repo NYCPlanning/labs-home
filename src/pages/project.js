@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Layout from '../components/layout'
 import FontAwesome from 'react-fontawesome'
 
 import { GitHubSVG } from '../components/svg-icons'
@@ -62,12 +63,14 @@ class Project extends React.Component {
     }
 
     return (
-      <div className="main text-center" style={{
-          padding: '20vh 0',
-          color: '#888',
-        }}>
-        <FontAwesome name='refresh' size='3x' spin/>
-      </div>
+      <Layout>
+        <div className="main text-center" style={{
+            padding: '20vh 0',
+            color: '#888',
+          }}>
+          <FontAwesome name='refresh' size='3x' spin/>
+        </div>
+      </Layout>
     )
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Link from 'gatsby-link';
+import Layout from '../components/layout'
 import FontAwesome from 'react-fontawesome'
 import fetch from 'node-fetch';
 
@@ -14,7 +15,6 @@ const ProjectCard = ({ project }) => {
   const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
 
   return (
-
     <div className="cell medium-6" key={project.name}>
       <Link to={`/projects/${project.slug}/`} className="card-link">
         <div className="card no-margin text-center">
@@ -142,63 +142,36 @@ class ProjectsPage extends React.Component {
 
     const { length } = projects;
 
+
     return (
-      <Switch>
-        <Route
-          path='/projects'
-          exact
-          render={
-            (transition) => {
-
-              return (
-                <div className="main">
-                  <Hero
-                    title="Projects"
-                    tagline="We design, prototype, and build lightweight & open technology tools for planners."
-                  />
-                  <div className="grid-container">
-                    <div className="grid-x grid-margin-x grid-padding-y">
-                      <div className="cell large-9">
-                        <p className="lead">We take on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks. Our work is open by default, so you can get involved in these projects.</p>
-                      </div>
-                      <div className="cell large-3">
-                        <Link to="/process/" className="button large">More about our&nbsp;process&hellip;</Link>
-                      </div>
-                    </div>
-                    <div className="grid-x grid-margin-x">
-                      <div className="cell large-8">
-                        { length ? projectCards() : spinner() }
-                      </div>
-                      <div className="cell large-4">
-                        <h3>In the Works</h3>
-                        { length ? currentCards() : spinner() }
-
-                        <h3>Developer Resources</h3>
-                        { length ? devCards() : spinner() }
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )
-            }
-          }/>
-
-        <Route
-          path='/projects/:id'
-          render={
-            transition => {
-              const { match: { params: { id } } } = transition;
-              const project = projects.find(project => {
-                const { slug } = project;
-                return slug === id;
-              });
-              return (
-                <Project project={ project } {...transition}/>
-              )
-            }
-          }
+      <div className="main">
+        <Hero
+          title="Projects"
+          tagline="We design, prototype, and build lightweight & open technology tools for planners."
         />
-      </Switch>
+        <div className="grid-container">
+          <div className="grid-x grid-margin-x grid-padding-y">
+            <div className="cell large-9">
+              <p className="lead">We take on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks. Our work is open by default, so you can get involved in these projects.</p>
+            </div>
+            <div className="cell large-3">
+              <Link to="/process/" className="button large">More about our&nbsp;process&hellip;</Link>
+            </div>
+          </div>
+          <div className="grid-x grid-margin-x">
+            <div className="cell large-8">
+              { length ? projectCards() : spinner() }
+            </div>
+            <div className="cell large-4">
+              <h3>In the Works</h3>
+              { length ? currentCards() : spinner() }
+
+              <h3>Developer Resources</h3>
+              { length ? devCards() : spinner() }
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }

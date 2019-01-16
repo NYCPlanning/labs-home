@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Link from 'gatsby-link';
+import Layout from '../components/layout'
 import FontAwesome from 'react-fontawesome';
 import Moment from 'react-moment';
 import fetch from 'node-fetch';
@@ -15,7 +16,6 @@ const StatusCard = ({ status }) => {
 
   const { valid:sslValid } = ssl;
   return (
-
     <div className="callout cell medium-6" key={status.token}>
       <div className="grid-x grid-margin-x text-small">
         <div className="cell">
@@ -96,15 +96,17 @@ class StatusPage extends React.Component {
 
 
     return (
-      <div className="main">
-        <Hero
-          title="Status"
-          tagline="We continuously monitor the status of our services."
-        />
-        <div className="grid-container">
-          { length ? statusCards() : spinner() }
+      <Layout>
+        <div className="main">
+          <Hero
+            title="Status"
+            tagline="We continuously monitor the status of our services."
+          />
+          <div className="grid-container">
+            { length ? statusCards() : spinner() }
+          </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

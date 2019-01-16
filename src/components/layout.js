@@ -23,13 +23,13 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
 
     <Header />
-    {children()}
+    {children}
     <Footer />
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.object,
 }
 
 export default TemplateWrapper
