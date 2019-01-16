@@ -11,9 +11,9 @@ const path = require(`path`)
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
 
-
   if (page.path.match(/^\/projects/)) {
-    page.matchPath = `/projects/:id`
+    console.log('match')
+    page.matchPath = `/projects/*`
   }
 
   createPage(page)
