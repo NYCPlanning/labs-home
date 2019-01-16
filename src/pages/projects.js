@@ -5,7 +5,7 @@ import FontAwesome from 'react-fontawesome'
 import fetch from 'node-fetch'
 
 import Hero from '../components/hero'
-import Project from './project'
+import Project from '../components/project'
 
 const projectsUri = 'https://home-api.planninglabs.nyc/projects'
 
