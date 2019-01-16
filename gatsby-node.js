@@ -3,18 +3,18 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-// 
-// const path = require(`path`)
-//
-// // Implement the Gatsby API “onCreatePage”. This is
-// // called after every page is created.
-// exports.onCreatePage = ({ page, actions }) => {
-//   const { createPage } = actions
-//
-//
-//   if (page.path.match(/^\/projects/)) {
-//     page.matchPath = `/projects/:path`
-//   }
-//
-//   createPage(page)
-// }
+
+const path = require(`path`)
+
+// Implement the Gatsby API “onCreatePage”. This is
+// called after every page is created.
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+
+
+  if (page.path.match(/^\/projects/)) {
+    page.matchPath = `/projects/:id`
+  }
+
+  createPage(page)
+}

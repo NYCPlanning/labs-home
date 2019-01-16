@@ -1,8 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Layout from '../components/layout'
-
-import Hero from '../components/hero'
 
 const SubmitIdeaPage = () => (
   <Layout>
@@ -16,7 +13,6 @@ const SubmitIdeaPage = () => (
         width="100%"
         height="1626"
       />
-
     </div>
   </Layout>
 )
