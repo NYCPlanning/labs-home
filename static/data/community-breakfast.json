@@ -40,5 +40,26 @@
     "date": "28 June 2018",
     "venue": "Cafe Luluc",
     "host": "Hayley Todd"
+  },
+  {
+    "id": 7,
+    "BoroCD": 401,
+    "date": "27 July 2018",
+    "venue": "Neptune Diner",
+    "host": "Andy Cochran"
+  },
+  {
+    "id": 8,
+    "BoroCD": 102,
+    "date": "28 September 2018",
+    "venue": "Cozy Soup and Burger",
+    "host": "Hannah Kates"
+  },
+  {
+    "id": 9,
+    "BoroCD": 303,
+    "date": "6 December 2018",
+    "venue": "Ma-n-Pop",
+    "host": "Matt Gardner"
   }
 ]
