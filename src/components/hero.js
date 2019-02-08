@@ -1,33 +1,40 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-
 const Hero = (props) => {
-  const title = props.title ? (
-    <h1 className="header-large">
-      { props.title }
-    </h1>
+  const {
+    title,
+    tagline,
+    buttonText,
+    buttonURL,
+
+  } = props;
+  const renderedTitle = title ? (
+    <h1 className="header-large">{title}</h1>
   ) : null;
 
-  const tagline = props.tagline ? (
-    <h2 className="header-xlarge">
-      { props.tagline }
-    </h2>
+  const renderedTagline = tagline ? (
+    <h2 className="header-xlarge">{tagline}</h2>
   ) : null;
 
   let button = null;
 
-  if (props.buttonText && props.buttonURL) {
-    if (props.buttonURL.split('//')[1]) {
+  if (buttonText && buttonText) {
+    if (buttonURL.split('//')[1]) {
       button = (
-        <a href={props.buttonURL} className="button large" target="_blank" rel="noopener noreferrer">
-          { props.buttonText }
+        <a
+          href={buttonURL}
+          className="button large"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {buttonText}
         </a>
       );
     } else {
       button = (
-        <Link to={props.buttonURL} className="button large">
-          { props.buttonText }
+        <Link to={buttonURL} className="button large">
+          {buttonText}
         </Link>
       );
     }
@@ -38,8 +45,8 @@ const Hero = (props) => {
       <div className="grid-container">
         <div className="grid-x grid-padding-x">
           <div className="cell">
-            {title}
-            {tagline}
+            {renderedTitle}
+            {renderedTagline}
             {button}
           </div>
         </div>
@@ -47,5 +54,6 @@ const Hero = (props) => {
     </div>
   );
 };
+
 
 export default Hero;

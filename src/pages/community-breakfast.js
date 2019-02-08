@@ -119,7 +119,7 @@ We&apos;re on a five-year mission to hold a team breakfast in each of NYC&apos;s
           <div className="grid-x grid-padding-x">
             <div className="cell large-8" id="page-content">
 
-              <div id="map-container" style={{ height: '500px', width: '100%' }} />
+              <div id="map-container" style={{ height: '500px', width: '50%' }} />
             </div>
             <div className="cell large-4" id="sidebar">
               {visitedListItems}

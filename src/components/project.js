@@ -1,41 +1,38 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 
-import { GitHubSVG } from '../components/svg-icons';
-import Hero from '../components/hero';
+import { GitHubSVG } from './svg-icons';
+import Hero from './hero';
 
 const Project = (props) => {
   const { project } = props;
 
   if (project) {
-    const url = project.thumbnail ? project.thumbnail[0].thumbnails.large.url : null;
+    const url = project.thumbnail
+      ? project.thumbnail[0].thumbnails.large.url
+      : null;
 
     let customer = null;
     if (project.customer) {
       customer = (
         <div>
           <hr />
-          <h6>
-Customer
-          </h6>
-          { project.customer }
+          <h6>Customer</h6>
+          {project.customer}
         </div>
       );
     }
-
 
     let github = null;
     if (project.github) {
       github = (
         <div>
           <hr />
-          <h6>
-GitHub Repository
-          </h6>
+          <h6>GitHub Repository</h6>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
             <GitHubSVG />
             {' '}
-            { project.github.split('//')[1] }
+            {project.github.split('//')[1]}
           </a>
         </div>
       );
@@ -54,12 +51,18 @@ GitHub Repository
             <div className="grid-x grid-padding-x">
               <div className="cell medium-7">
                 <p style={{ whiteSpace: 'pre-line' }}>
-                  { project.description }
+                  {project.description}
                 </p>
               </div>
               <div className="cell medium-5">
                 <a href={project.url}>
-                  { url && <img src={url} alt={project.name} className="project-image" /> }
+                  {url && (
+                  <img
+                    src={url}
+                    alt={project.name}
+                    className="project-image"
+                  />
+                  )}
                 </a>
                 {customer}
                 {github}
@@ -83,6 +86,5 @@ GitHub Repository
     </div>
   );
 };
-
 
 export default Project;
