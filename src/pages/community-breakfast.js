@@ -1,6 +1,7 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
 
+import Layout from '../components/layout';
 import Hero from '../components/hero';
 
 
@@ -23,8 +24,8 @@ class CommunityBreakfastPage extends React.Component {
       window.map = map;  // eslint-disable-line
 
       const fetches = [
-        fetch('data/nycd.json'), // eslint-disable-line
-        fetch('data/community-breakfast.json'), // eslint-disable-line
+        fetch('/data/nycd.json'), // eslint-disable-line
+        fetch('/data/community-breakfast.json'), // eslint-disable-line
       ];
 
       Promise.all(fetches)
@@ -103,30 +104,32 @@ class CommunityBreakfastPage extends React.Component {
     }
 
     return (
-      <div className="main">
-        <Hero
-          title="Community Breakfast"
-          tagline="We do a monthly team breakfast in a new NYC Community District."
-        />
+      <Layout>
+        <div className="main">
+          <Hero
+            title="Community Breakfast"
+            tagline="We do a monthly team breakfast in a new NYC Community District."
+          />
 
-        <div className="grid-container">
-          <h2 id="what-is-planning-labs" data-magellan-target="what-is-planning-labs">
-Community Breakfast
-          </h2>
-          <p>
-We&apos;re on a five-year mission to hold a team breakfast in each of NYC&apos;s 59 community districts. We try to find a community ambassador who can show us around and comment on the neighborhood&apos;s character, history, and planning context.
-          </p>
-          <div className="grid-x grid-padding-x">
-            <div className="cell large-8" id="page-content">
+          <div className="grid-container">
+            <h2 id="what-is-planning-labs" data-magellan-target="what-is-planning-labs">
+  Community Breakfast
+            </h2>
+            <p>
+  We&apos;re on a five-year mission to hold a team breakfast in each of NYC&apos;s 59 community districts. We try to find a community ambassador who can show us around and comment on the neighborhood&apos;s character, history, and planning context.
+            </p>
+            <div className="grid-x grid-padding-x">
+              <div className="cell large-8" id="page-content">
 
-              <div id="map-container" style={{ height: '500px', width: '50%' }} />
-            </div>
-            <div className="cell large-4" id="sidebar">
-              {visitedListItems}
+                <div id="map-container" style={{ height: '500px', width: '50%' }} />
+              </div>
+              <div className="cell large-4" id="sidebar">
+                {visitedListItems}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Layout>
     );
   }
 }
