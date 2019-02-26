@@ -73,7 +73,7 @@ const IndexPage = () => (
                     Recent blog posts
                 {' '}
                 <small style={{ fontSize: '0.6em' }}>
-                  <a href="https://medium.com/nycplanninglabs">
+                  <a href="https://medium.com/tag/nyc-planning-labs/latest">
                         See All (medium.com)
                   </a>
                 </small>
