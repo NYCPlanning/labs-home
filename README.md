@@ -19,7 +19,6 @@ In the spirit of free software, everyone is encouraged to help improve this proj
   - Add comments
   - Clean up code
   - Add new features
-
 **[Read more about contributing.](CONTRIBUTING.md)**
 
 ## Requirements
