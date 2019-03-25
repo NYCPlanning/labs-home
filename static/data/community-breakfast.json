@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "BoroCD": 301,
+    "date": "25 January 2018",
+    "venue": "Early",
+    "host": "Noel Hidalgo"
+  },
+  {
+    "id": 2,
+    "BoroCD": 503,
+    "date": "27 February 2018",
+    "venue": "Annadale Terrace Diner",
+    "host": "Olivia Sullivan and George Todovoric"
+  },
+  {
+    "id": 3,
+    "BoroCD": 204,
+    "date": "23 March 2018",
+    "venue": "Court Deli",
+    "host": "Michael Kavalar"
+  },
+  {
+    "id": 4,
+    "BoroCD": 402,
+    "date": "19 April 2018",
+    "venue": "Court Square Diner",
+    "host": "Sophie Rand"
+  },
+  {
+    "id": 5,
+    "BoroCD": 103,
+    "date": "25 May 2018",
+    "venue": "Kossar’s Bagels & Bialys",
+    "host": "Hannah Kates"
+  },
+  {
+    "id": 6,
+    "BoroCD": 306,
+    "date": "28 June 2018",
+    "venue": "Cafe Luluc",
+    "host": "Hayley Todd"
+  },
+  {
+    "id": 7,
+    "BoroCD": 401,
+    "date": "27 July 2018",
+    "venue": "Neptune Diner",
+    "host": "Andy Cochran"
+  },
+  {
+    "id": 8,
+    "BoroCD": 102,
+    "date": "28 September 2018",
+    "venue": "Cozy Soup and Burger",
+    "host": "Hannah Kates"
+  },
+  {
+    "id": 9,
+    "BoroCD": 303,
+    "date": "6 December 2018",
+    "venue": "Ma-n-Pop",
+    "host": "Matt Gardner"
+  }
+]

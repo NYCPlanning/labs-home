@@ -14,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.0.5",
     "gatsby-plugin-sass": "^2.0.7",
     "hoek": "^6.1.2",
+    "mapbox-gl": "^0.53.0",
     "moment": "^2.23.0",
     "motion-ui": "^2.0.3",
     "node-sass": "^4.11.0",
