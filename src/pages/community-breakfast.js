@@ -96,9 +96,20 @@ class CommunityBreakfastPage extends React.Component {
         },
       }) => (
         <h5 key={BoroCD} style={{ fontWeight: 'normal', marginBottom: '0.75em' }}>
-          <small style={{ opacity: '0.75' }}>{date}</small><br />
-          <strong>{BoroCD} - {venue}</strong>&nbsp;
-          <small>w/ {host}</small>
+          <small style={{ opacity: '0.75' }}>{date}</small>
+          <br />
+          <strong>
+            {BoroCD}
+            {' '}
+            -
+            {' '}
+            {venue}
+          </strong>
+          {' '}
+          <small>
+            w/
+            {host}
+          </small>
         </h5>
       ));
     }
