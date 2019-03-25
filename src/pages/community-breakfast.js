@@ -95,11 +95,11 @@ class CommunityBreakfastPage extends React.Component {
           BoroCD, date, venue, host,
         },
       }) => (
-        <div key={BoroCD}>
-          {date}
-          {venue}
-          {host}
-        </div>
+        <h5 key={BoroCD} style={{ fontWeight: 'normal', marginBottom: '0.75em' }}>
+          <small style={{ opacity: '0.75' }}>{date}</small><br />
+          <strong>{BoroCD} - {venue}</strong>&nbsp;
+          <small>w/ {host}</small>
+        </h5>
       ));
     }
 
@@ -108,20 +108,12 @@ class CommunityBreakfastPage extends React.Component {
         <div className="main">
           <Hero
             title="Community Breakfast"
-            tagline="We do a monthly team breakfast in a new NYC Community District."
+            tagline="We have a team breakfast in a new Community District each month, with a neighborhood ambassador to show us around and comment on the neighborhood's character, history, and planning context."
           />
-
           <div className="grid-container">
-            <h2 id="what-is-planning-labs" data-magellan-target="what-is-planning-labs">
-  Community Breakfast
-            </h2>
-            <p>
-  We&apos;re on a five-year mission to hold a team breakfast in each of NYC&apos;s 59 community districts. We try to find a community ambassador who can show us around and comment on the neighborhood&apos;s character, history, and planning context.
-            </p>
             <div className="grid-x grid-padding-x">
-              <div className="cell large-8" id="page-content">
-
-                <div id="map-container" style={{ height: '500px', width: '50%' }} />
+              <div className="cell large-8" id="page-content" style={{ minHeight: '50vh' }}>
+                <div id="map-container" style={{ height: '100%', width: '100%' }} />
               </div>
               <div className="cell large-4" id="sidebar">
                 {visitedListItems}
