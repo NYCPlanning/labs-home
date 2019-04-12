@@ -83,8 +83,8 @@ const AboutPage = () => (
               <div className="media-object-section">
                 <h4>Build With, Not For</h4>
                 <p>
-                  Planning Labs is a design partner, working closely with its
-                  customers in visioning and agile development. Customers are
+                  Planning Labs is a design partner, working closely with our
+                  colleagues in visioning and agile development. Collaborators are
                   expected to provide resources for the duration of a product
                   build, and will be heavily involved in sprint planning,
                   testing and acceptance.
@@ -342,7 +342,7 @@ const AboutPage = () => (
               establishing a service delivery unit within the Information
               Technology Division. Planning Labs’ mission would be to build
               lightweight impactful tools with the agency’s divisions as
-              clients, and to be open, vocal, and inclusive about the modern
+              collaborators, and to be open, vocal, and inclusive about the modern
               technologies and processes used.
             </p>
           </div>
