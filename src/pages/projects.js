@@ -111,20 +111,36 @@ class ProjectsPage extends React.Component {
 
     const devCards = () => {
       const devProjects = projects.filter(d => d.type === 'resource');
-      const cards = devProjects.map(project => (
-        <DevCard key={project.slug} project={project} />
-      ));
 
-      return <div>{cards}</div>;
+      if (devProjects.length) {
+        const cards = devProjects.map(project => (
+          <DevCard key={project.slug} project={project} />
+        ));
+        return (
+          <div>
+            <h3>Developer Resources</h3>
+            {cards}
+          </div>
+        );
+      }
+      return null;
     };
 
     const currentCards = () => {
       const currentProjects = projects.filter(d => d.type === 'current');
-      const cards = currentProjects.map(project => (
-        <DevCard key={project.slug} project={project} />
-      ));
 
-      return <div>{cards}</div>;
+      if (currentProjects.length) {
+        const cards = currentProjects.map(project => (
+          <DevCard key={project.slug} project={project} />
+        ));
+        return (
+          <div>
+            <h3>In the Works</h3>
+            {cards}
+          </div>
+        );
+      }
+      return null;
     };
 
     const spinner = () => (
@@ -152,7 +168,7 @@ class ProjectsPage extends React.Component {
             <div className="cell large-9">
               <p className="lead">
                 We take on a single project at a time, working closely with our
-                customers from concept to delivery in a matter of weeks. Our
+                colleagues from concept to delivery in a matter of weeks. Our
                 work is open by default, so you can get involved in these
                 projects.
               </p>
@@ -168,10 +184,7 @@ class ProjectsPage extends React.Component {
               {length ? projectCards() : spinner()}
             </div>
             <div className="cell large-4">
-              <h3>In the Works</h3>
               {length ? currentCards() : spinner()}
-
-              <h3>Developer Resources</h3>
               {length ? devCards() : spinner()}
             </div>
           </div>

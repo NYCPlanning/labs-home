@@ -11,7 +11,7 @@ const ProcessPage = () => (
     <div id="main" className="main">
       <Hero
         title="Our Process"
-        tagline="Planning Labs projects are chosen through an open process in collaboration with our customers."
+        tagline="Planning Labs projects are chosen through an open process in collaboration with our colleagues."
       />
       <div className="grid-container">
         <StickyContainer className="grid-x grid-padding-x">
@@ -57,7 +57,7 @@ const ProcessPage = () => (
           </div>
           <div className="cell large-8" id="page-content">
             <h2 id="step-1">Step 1: Idea Submission</h2>
-            <h6>Customer</h6>
+            <h6>Collaborators</h6>
             <p>
               DCP staff submit a clearly defined problem that needs solving,
               such as a real-world planning issue, a minor technical workflow
@@ -70,10 +70,10 @@ const ProcessPage = () => (
             <hr />
 
             <h2 id="step-2">Step 2: Idea Vetting</h2>
-            <h6> Labs + Customer</h6>
+            <h6> Labs + Collaborators</h6>
             <p>
               When an idea is submitted, the Planning Labs team starts a
-              dialogue with the customer to determine if it’s a good candidate
+              dialogue with our colleagues to determine if it’s a good candidate
               for a Labs project.
             </p>
             <ul>

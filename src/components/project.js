@@ -17,7 +17,7 @@ const Project = (props) => {
       customer = (
         <div>
           <hr />
-          <h6>Customer</h6>
+          <h6>Built with</h6>
           {project.customer}
         </div>
       );
