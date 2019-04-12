@@ -111,28 +111,36 @@ class ProjectsPage extends React.Component {
 
     const devCards = () => {
       const devProjects = projects.filter(d => d.type === 'resource');
-      
+
       if (devProjects.length) {
         const cards = devProjects.map(project => (
           <DevCard key={project.slug} project={project} />
         ));
-        return <div><h3>Developer Resources</h3>{cards}</div>;
-      } else {
-        return null;
+        return (
+          <div>
+            <h3>Developer Resources</h3>
+            {cards}
+          </div>
+        );
       }
+      return null;
     };
 
     const currentCards = () => {
       const currentProjects = projects.filter(d => d.type === 'current');
-      
+
       if (currentProjects.length) {
         const cards = currentProjects.map(project => (
           <DevCard key={project.slug} project={project} />
         ));
-        return <div><h3>In the Works</h3>{cards}</div>;
-      } else {
-        return null;
+        return (
+          <div>
+            <h3>In the Works</h3>
+            {cards}
+          </div>
+        );
       }
+      return null;
     };
 
     const spinner = () => (
