@@ -144,31 +144,7 @@ const AboutPage = () => (
         </h2>
         <div className="grid-x grid-padding-x">
           <div className="cell large-6">
-            <h3 id="chris-whong-director">Chris Whong: Director</h3>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  alt="Chris Whong"
-                  src="https://pbs.twimg.com/profile_images/3057855429/49cff02ea1ea88993d7edadd8b027982_400x400.jpeg"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Chris developed the concept for Planning Labs in 2017, after
-                  leading the development of modern, open mapping applications
-                  in DCP’s Capital Planning Division. He is an urbanist, open
-                  data advocate, civic technologist, and a former Code for
-                  America Brigade leader.
-                  {' '}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
-            <h3 id="andy-cochran-designer">Andy Cochran: Designer</h3>
+            <h3 id="andy-cochran-designer">Andy Cochran: Interim Director | Designer</h3>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
