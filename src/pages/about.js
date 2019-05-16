@@ -151,7 +151,7 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   alt="Andy Cochran"
-                  src="https://pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg"
+                  src="/img/andy-cochran.jpg"
                 />
                 {' '}
               </div>
@@ -178,7 +178,7 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   alt="Matt Gardner"
-                  src="https://pbs.twimg.com/profile_images/598597497141997568/zR8hc1fd_400x400.jpg"
+                  src="/img/matt-gardner.jpg"
                 />
                 {' '}
               </div>
@@ -212,7 +212,7 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   alt="Hannah Kates"
-                  src="https://raw.githubusercontent.com/hannahkates/hannahkates.github.io/master/img/headshot.jpg"
+                  src="/img/hannah-kates.jpg"
                 />
                 {' '}
               </div>
@@ -244,7 +244,7 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   alt="Taylor McGinnis"
-                  src="https://pbs.twimg.com/profile_images/993272123614429186/vVtomJdU_400x400.jpg"
+                  src="/img/taylor-mcginnis.jpg"
                 />
                 {' '}
               </div>
@@ -266,7 +266,7 @@ const AboutPage = () => (
                 {' '}
                 <img
                   className="thumbnail avatar"
-                  src="https://lh3.googleusercontent.com/q3rBZTYfXLLGgkEapBqgETLN7yg6AF06K6oa_E63j7UvMMjngQAQuJ_rlPJsbjAhs_3MBQbOp__t4V3oR21gHSp_3WHKkjLeW57Exu35lujJ4t6Ih1wq_y0loCgC0q0SwaN14fIhRQF5lGVzRItw_JU-7w-NN2aHqfKPqi-nVPgqQW0-vz4Vg1iJECTbLhdtu5lobBP5YMJJj417-UHUkMF4gXc412_z6bg6EGROZ6qZ1wAGykNzwnpY17VZh_sogA5Nua4OZcveVaNzsTM9tHOHU2mq3Gr39NcqGwReqqU556gYMrs5xYTbACeBEVpzQodEXFnugvuK8udQxVeaajhwoGkfGoloCed5Kj8gIp-g2nGF9msKgrDJSEw7JGJ8dHSi3idNIaK9ZMa2JcH-HBPYwLLGqkRSFm35VlaOdDgeixzjayy7rsQEcNgsLvr0TduV38ydNSp9NWoQVKbv0nAOsz-RiUI9AdXnQq_GyVdSZ8p0C8t-vkPblZm6RjiI8ztMPFYsoTpHkZ2icmI8l-CNdXUcroIDAqGaVcNLoNnPSgKgPcmUTtD2PoQKBfHYzjT0ANJZeY77-lo6QgOcauNFJElU6ZaRjKvyLtrZsJyzxFImApqTuWgcEu6OdST30lU6JHopdaP9QFeJOSpNQdT_gXjfQKXUKEo9nhwAbEhRXkzozevQ4vIpARo_I2hTUOcrlbPKV-5Bi1rhtw=w2640-h1798-no"
+                  src="/img/julia-hogan.jpg"
                   alt="Julia Hogan"
                 />
               </div>
