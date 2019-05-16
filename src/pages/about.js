@@ -144,7 +144,8 @@ const AboutPage = () => (
         </h2>
         <div className="grid-x grid-padding-x">
           <div className="cell large-6">
-            <h3 id="andy-cochran-designer">Andy Cochran: Interim Director | Designer</h3>
+            <h3 className="team-member--name" id="andy-cochran">Andy Cochran</h3>
+            <h4 className="team-member--title">Interim Director | Designer</h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
@@ -171,7 +172,8 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 id="matt-gardner-developer">Matt Gardner: Developer</h3>
+            <h3 className="team-member--name" id="matt-gardner">Matt Gardner</h3>
+            <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
@@ -203,9 +205,8 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 id="hannah-kates-product-manager">
-              Hannah Kates: Product Manager
-            </h3>
+            <h3 className="team-member--name" id="hannah-kates">Hannah Kates</h3>
+            <h4 className="team-member--title">Product Manager</h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
@@ -237,7 +238,8 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 id="taylor-mcginnis-intern">Taylor McGinnis: Developer</h3>
+            <h3 className="team-member--name" id="taylor-mcginnis">Taylor McGinnis</h3>
+            <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
@@ -260,7 +262,8 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 id="julia-hogan-developer">Julia Hogan: Developer</h3>
+            <h3 className="team-member--name" id="julia-hogan">Julia Hogan</h3>
+            <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
@@ -269,6 +272,7 @@ const AboutPage = () => (
                   src="/img/julia-hogan.jpg"
                   alt="Julia Hogan"
                 />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
@@ -276,14 +280,17 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 id="jonathan-pichot-product-manager">Jonathan Pichot: Product Manager</h3>
+            <h3 className="team-member--name" id="jonathan-pichot">Jonathan Pichot</h3>
+            <h4 className="team-member--title">Product Manager</h4>
             <div className="media-object">
               <div className="media-object-section">
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/pichot.jpg"
                   alt="Jonathan Pichot"
                 />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>Jonathan joined Planning Labs in Oct 2018. He began his career as a developer in a number of agencies. In 2012, he founded the Code for America brigade in Grand Rapids, Michigan and had his first taste of public service with the city&apos;s Downtown Development Authority. He believes in bold and transformative public servants.</p>
@@ -291,6 +298,34 @@ const AboutPage = () => (
             </div>
           </div>
         </div>
+
+        <input type="checkbox" id="past-team-members-input" />
+
+        <p className="text-center">
+          <label for="past-team-members-input" class="button small secondary">View Past Team Members</label>
+        </p>
+
+        <div id="past-team-members" className="grid-x grid-padding-x">
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="chris-whong">Chris Whong</h3>
+            <h4 className="team-member--title">Director <small>(July 2017–April 2019)</small></h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  alt="Andy Cochran"
+                  src="/img/chris-whong.jpg"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>Chris developed the concept for Planning Labs in 2017, after leading the development of modern, open mapping applications in DCP’s Capital Planning Division. He is an urbanist, open data advocate, civic technologist, and a former Code for America Brigade leader.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <hr />
 
         <div className="grid-x grid-padding-x">

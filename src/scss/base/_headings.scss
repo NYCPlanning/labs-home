@@ -15,3 +15,13 @@ h6,
   font-weight: $global-weight-normal;
   margin-bottom: 0.5em;
 }
+
+.team-member--name {
+  margin-bottom: 0;
+}
+.team-member--title {
+  font-weight: normal;
+  font-style: italic;
+  color: $dark-gray;
+  margin-bottom: 0.75rem;
+}

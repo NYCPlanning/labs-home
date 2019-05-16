@@ -96,3 +96,12 @@
     text-transform: none;
   }
 }
+
+#past-team-members-input { display: none; }
+#past-team-members {
+  display: none;
+
+  #past-team-members-input:checked ~ & {
+    display: block;
+  }
+}
