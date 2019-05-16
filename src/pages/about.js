@@ -302,13 +302,16 @@ const AboutPage = () => (
         <input type="checkbox" id="past-team-members-input" />
 
         <p className="text-center">
-          <label for="past-team-members-input" class="button small secondary">View Past Team Members</label>
+          <label htmlFor="past-team-members-input" className="button small secondary">View Past Team Members</label>
         </p>
 
         <div id="past-team-members" className="grid-x grid-padding-x">
           <div className="cell large-6">
             <h3 className="team-member--name" id="chris-whong">Chris Whong</h3>
-            <h4 className="team-member--title">Director <small>(July 2017–April 2019)</small></h4>
+            <h4 className="team-member--title">
+              Director
+              <small>(July 2017–April 2019)</small>
+            </h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
