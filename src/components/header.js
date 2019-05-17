@@ -40,13 +40,9 @@ class Header extends React.Component {
             <div className="cell shrink large-auto">
               <Link to="/" className="site-logo montserrat">
                 <img
-                  src="https://raw.githubusercontent.com/NYCPlanning/logo/master/dcp_logo_772.png"
+                  src="/img/labs-logo.png"
                   alt="NYC Planning"
                 />
-                <span className="site-logo--l">L</span>
-                <span className="site-logo--a">a</span>
-                <span className="site-logo--b">b</span>
-                <span className="site-logo--s">s</span>
               </Link>
             </div>
             <div className="cell auto hide-for-large text-right">
