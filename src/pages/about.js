@@ -297,6 +297,24 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="rahul-alexander">Rahul Alexander</h3>
+            <h4 className="team-member--title">User Experience Designer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/rahul.jpg"
+                  alt="Rahul Alexander"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>Rahul Alexander joined Labs in April 2019 after working as a design and UX Consultant for non-profits and startups. He has a background in education and has collaborated on numerous projects at the intersection of public space, design, and technology.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
