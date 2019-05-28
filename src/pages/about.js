@@ -311,7 +311,7 @@ const AboutPage = () => (
                 {' '}
               </div>
               <div className="media-object-section">
-                <p>Rahul Alexander joined Labs in April 2019 after working as a design and UX Consultant for non-profits and startups. He has a background in education and has collaborated on numerous projects at the intersection of public space, design, and technology.</p>
+                <p>Rahul Alexander joined Labs in April 2019 after work as a design and UX Consultant for various non-profits and startups. He has a background in education and has collaborated on numerous projects at the intersection of public space, design, and technology.</p>
               </div>
             </div>
           </div>
