@@ -330,7 +330,7 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>
-                  Godfrey joined labs in May 2019. Previously he was delivering spatial web applications for Oregon Metro&apos;s various departments like Parks, Property &amp; Environmental Services, and Planning, and also for the City of Salem. For the past decade he has had an interest in urban planning and creating software to help improve the build environment.
+                  Godfrey joined labs in May 2019. Previously he delivered spatial web applications for Oregon Metro&apos;s various departments like Parks, Property &amp; Environmental Services, and Planning, and also for the City of Salem. For the past decade he has had an interest in urban planning and creating software to help improve the built environment.
                 </p>
               </div>
             </div>
