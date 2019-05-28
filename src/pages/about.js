@@ -315,6 +315,26 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="godfrey-yeung">Godfrey Yeung</h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/godfrey.jpg"
+                  alt="Godfrey Yeung"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Godfrey joined labs in May 2019. Previously he was delivering spatial web applications for Oregon Metro&apos;s various departments like Parks, Property &amp; Environmental Services, and Planning, and also for the City of Salem. For the past decade he has had an interest in urban planning and creating software to help improve the build environment.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
