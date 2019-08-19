@@ -29,7 +29,7 @@ const AboutPage = () => (
             <p className="lead">
               Planning Labs is a division of the
               {' '}
-              <a href="http://www1.nyc.gov/site/planning/">
+              <a href="https://www1.nyc.gov/site/planning/index.page">
                 NYC Department of City Planning
               </a>
               {' '}
