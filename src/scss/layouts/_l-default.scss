@@ -102,6 +102,6 @@
   display: none;
 
   #past-team-members-input:checked ~ & {
-    display: block;
+    display: flex;
   }
 }
