@@ -262,24 +262,6 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 className="team-member--name" id="julia-hogan">Julia Hogan</h3>
-            <h4 className="team-member--title">Developer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/julia-hogan.jpg"
-                  alt="Julia Hogan"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
             <h3 className="team-member--name" id="jonathan-pichot">Jonathan Pichot</h3>
             <h4 className="team-member--title">Product Manager</h4>
             <div className="media-object">
@@ -384,6 +366,27 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>Chris developed the concept for Planning Labs in 2017, after leading the development of modern, open mapping applications in DCP’s Capital Planning Division. He is an urbanist, open data advocate, civic technologist, and a former Code for America Brigade leader.</p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="julia-hogan">Julia Hogan</h3>
+            <h4 className="team-member--title">
+              Developer
+              <small>(January 2019–August 2019)</small>
+            </h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/julia-hogan.jpg"
+                  alt="Julia Hogan"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
               </div>
             </div>
           </div>
