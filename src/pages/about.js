@@ -335,6 +335,28 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="kate-chanba">Kate Chanba</h3>
+            <h4 className="team-member--title">Interaction Designer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/kate-chanba.jpg"
+                  alt="Kate Chanba"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Kate joined Labs in August 2019. She previously built transportation and wayfinding tools with Conveyal and her own consultancy, Route. She's passionate about proactive government and multimodal cities. Kate teaches design and cartography at Pratt's Spatial Analysis and Visualization Initiative.
+
+
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
