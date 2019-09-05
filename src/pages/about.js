@@ -350,7 +350,7 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>
-                  Kate joined Labs in August 2019. She previously built transportation and wayfinding tools with Conveyal and her own consultancy, Route. She's passionate about proactive government and multimodal cities. Kate teaches design and cartography at Pratt's Spatial Analysis and Visualization Initiative.
+                  Kate joined Labs in August 2019. She previously built transportation and wayfinding tools with Conveyal and her own consultancy, Route. She is passionate about proactive government and multimodal cities. Kate teaches design and cartography at Pratt&apos;s Spatial Analysis and Visualization Initiative.
 
 
                 </p>
