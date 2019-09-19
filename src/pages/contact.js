@@ -55,9 +55,9 @@ const ContactPage = () => (
               </li>
               <li>
                 <p>
-                  Subscribe to our blogs
+                  Read our
                   {' '}
-                  <a href="/feed.xml">RSS feed</a>
+                  <a href="https://medium.com/nyc-planning-digital">blog posts</a>
                 </p>
               </li>
             </ul>
