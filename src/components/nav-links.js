@@ -55,7 +55,7 @@ const NavLinks = ({ ulClasses }) => (
       </a>
     </li>
     <li className="external-nav-item">
-      <a title="Blog" href="https://medium.com/nycplanninglabs">
+      <a title="Blog" href="https://medium.com/nyc-planning-digital">
         <RssSVG />
         <span className="hide-for-large"> &nbsp; Blog</span>
       </a>
