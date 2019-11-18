@@ -280,24 +280,6 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 className="team-member--name" id="rahul-alexander">Rahul Alexander</h3>
-            <h4 className="team-member--title">User Experience Designer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/rahul.jpg"
-                  alt="Rahul Alexander"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>Rahul Alexander joined Labs in April 2019 after work as a design and UX Consultant for various non-profits and startups. He has a background in education and has collaborated on numerous projects at the intersection of public space, design, and technology.</p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
             <h3 className="team-member--name" id="godfrey-yeung">Godfrey Yeung</h3>
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
@@ -351,8 +333,7 @@ const AboutPage = () => (
           <div className="cell large-6">
             <h3 className="team-member--name" id="chris-whong">Chris Whong</h3>
             <h4 className="team-member--title">
-              Director
-              <small>(July 2017–April 2019)</small>
+              Director <small class="nowrap">(July 2017–April 2019)</small>
             </h4>
             <div className="media-object">
               <div className="media-object-section">
@@ -372,8 +353,7 @@ const AboutPage = () => (
           <div className="cell large-6">
             <h3 className="team-member--name" id="julia-hogan">Julia Hogan</h3>
             <h4 className="team-member--title">
-              Developer
-              <small>(January 2019–August 2019)</small>
+              Developer <small class="nowrap">(January 2019–August 2019)</small>
             </h4>
             <div className="media-object">
               <div className="media-object-section">
@@ -387,6 +367,26 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="rahul-alexander">Rahul Alexander</h3>
+            <h4 className="team-member--title">
+              User Experience Designer <small class="nowrap">(April 2019–November 2019)</small>
+            </h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/rahul.jpg"
+                  alt="Rahul Alexander"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>Rahul Alexander joined Labs in April 2019 after work as a design and UX Consultant for various non-profits and startups. He has a background in education and has collaborated on numerous projects at the intersection of public space, design, and technology.</p>
               </div>
             </div>
           </div>
