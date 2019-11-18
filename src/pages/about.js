@@ -334,7 +334,7 @@ const AboutPage = () => (
             <h3 className="team-member--name" id="chris-whong">Chris Whong</h3>
             <h4 className="team-member--title">
               Director
-              <small class="nowrap"> (July 2017–April 2019)</small>
+              <small className="nowrap"> (July 2017–April 2019)</small>
             </h4>
             <div className="media-object">
               <div className="media-object-section">
@@ -355,7 +355,7 @@ const AboutPage = () => (
             <h3 className="team-member--name" id="julia-hogan">Julia Hogan</h3>
             <h4 className="team-member--title">
               Developer
-              <small class="nowrap"> (January 2019–August 2019)</small>
+              <small className="nowrap"> (January 2019–August 2019)</small>
             </h4>
             <div className="media-object">
               <div className="media-object-section">
@@ -376,7 +376,7 @@ const AboutPage = () => (
             <h3 className="team-member--name" id="rahul-alexander">Rahul Alexander</h3>
             <h4 className="team-member--title">
               User Experience Designer
-              <small class="nowrap"> (April 2019–November 2019)</small>
+              <small className="nowrap"> (April 2019–November 2019)</small>
             </h4>
             <div className="media-object">
               <div className="media-object-section">
