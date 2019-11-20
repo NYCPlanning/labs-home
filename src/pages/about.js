@@ -321,6 +321,26 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="brandyn-friedly">Brandyn Friedly</h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/brandyn-friedly.jpg"
+                  alt="Brandyn Friedly"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Brandyn joined Labs in November 2019, after working as a developer for the City of St. Paul.  He previously helped co-organize MaptimeNYC, where he fell in love with web mapping and open source communities.  Brandyn teaches data literacy and visualization at the School of Visual Arts.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
