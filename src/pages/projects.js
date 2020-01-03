@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Project from '../components/project';
 
-const projectsUri = 'https://home-api.planninglabs.nyc/projects';
+const projectsUri = 'https://labs-home-api.herokuapp.com/projects';
 
 const ProjectCard = ({ project }) => {
   const url = project.thumbnail
