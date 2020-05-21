@@ -32,10 +32,25 @@ You will need the following things properly installed on your computer.
 
 ## Local development
 
-- Clone this repo `git clone git@github.com:NYCPlanning/labs-planninglabs-home.git`
-- Navigate to the project directory `cd labs-planninglabs-home`
-- Run `yarn` to install dependencies
-- `gatsby develop` — Gatsby will start a hot-reloading development environment accessible at `localhost:8000`. Edit the javascript pages in src/pages. Saved changes will live reload in the browser.
+1. Clone this repo  
+   ```sh
+   git clone git@github.com:NYCPlanning/labs-planninglabs-home.git
+   ```
+2. Navigate to the project directory 
+   ```sh
+   cd labs-planninglabs-home
+   ```
+3. Install dependencies
+   ```sh
+   yarn
+   ```
+4. Start your development server
+   ```sh
+   gatsby develop
+   ```
+5.  Go to `localhost:8080` in your web browser, make any code changes in the [src directory](src) and watch as your webpage automatically reloads to show your changes.
+
+_Optional_
 - `gatsby build` — Gatsby will perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
 - `gatsby serve` — Gatsby starts a local HTML server for testing your built site.
 
