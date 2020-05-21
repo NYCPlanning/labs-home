@@ -341,6 +341,26 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="nneka-sobers">Nneka Sobers</h3>
+            <h4 className="team-member--title">Product Manager</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/NnekaSobers_Headshotsq.jpg"
+                  alt="Nneka Sobers"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Nneka joined Planning Labs in March 2020. Her previous work includes conducting user research to understand how building environments influence social behavior and developing new tools to help communities develop/manage self-organized infrastructure systems. Nneka is passionate about increasing social impact through civic technology and empathetic design.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
