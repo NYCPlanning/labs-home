@@ -262,24 +262,6 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 className="team-member--name" id="jonathan-pichot">Jonathan Pichot</h3>
-            <h4 className="team-member--title">Product Manager</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/pichot.jpg"
-                  alt="Jonathan Pichot"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>Jonathan joined Planning Labs in Oct 2018. He began his career as a developer in a number of agencies. In 2012, he founded the Code for America brigade in Grand Rapids, Michigan and had his first taste of public service with the city&apos;s Downtown Development Authority. He believes in bold and transformative public servants.</p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
             <h3 className="team-member--name" id="godfrey-yeung">Godfrey Yeung</h3>
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
@@ -295,28 +277,6 @@ const AboutPage = () => (
               <div className="media-object-section">
                 <p>
                   Godfrey joined labs in May 2019. Previously he delivered spatial web applications for Oregon Metro&apos;s various departments like Parks, Property &amp; Environmental Services, and Planning, and also for the City of Salem. For the past decade he has had an interest in urban planning and creating software to help improve the built environment.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
-            <h3 className="team-member--name" id="kate-chanba">Kate Chanba</h3>
-            <h4 className="team-member--title">Interaction Designer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/kate-chanba.jpg"
-                  alt="Kate Chanba"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Kate joined Labs in August 2019. She previously built transportation and wayfinding tools with Conveyal and her own consultancy, Route. She is passionate about proactive government and multimodal cities. Kate teaches design and cartography at Pratt&apos;s Spatial Analysis and Visualization Initiative.
-
-
                 </p>
               </div>
             </div>
@@ -356,7 +316,7 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>
-                  Nneka joined Planning Labs in March 2020. Her previous work includes conducting user research to understand how building environments influence social behavior and developing new tools to help communities develop/manage self-organized infrastructure systems. Nneka is passionate about increasing social impact through civic technology and empathetic design. 
+                  Nneka joined Planning Labs in March 2020. Her previous work includes conducting user research to understand how building environments influence social behavior and developing new tools to help communities develop/manage self-organized infrastructure systems. Nneka is passionate about increasing social impact through civic technology and empathetic design.
                 </p>
               </div>
             </div>
@@ -430,6 +390,44 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>Rahul Alexander joined Labs in April 2019 after work as a design and UX Consultant for various non-profits and startups. He has a background in education and has collaborated on numerous projects at the intersection of public space, design, and technology.</p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="jonathan-pichot">Jonathan Pichot</h3>
+            <h4 className="team-member--title">Product Manager</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/pichot.jpg"
+                  alt="Jonathan Pichot"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>Jonathan joined Planning Labs in Oct 2018. He began his career as a developer in a number of agencies. In 2012, he founded the Code for America brigade in Grand Rapids, Michigan and had his first taste of public service with the city&apos;s Downtown Development Authority. He believes in bold and transformative public servants.</p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="kate-chanba">Kate Chanba</h3>
+            <h4 className="team-member--title">Interaction Designer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/kate-chanba.jpg"
+                  alt="Kate Chanba"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Kate joined Labs in August 2019. She previously built transportation and wayfinding tools with Conveyal and her own consultancy, Route. She is passionate about proactive government and multimodal cities. Kate teaches design and cartography at Pratt&apos;s Spatial Analysis and Visualization Initiative.
+                </p>
               </div>
             </div>
           </div>
