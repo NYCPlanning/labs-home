@@ -14,7 +14,7 @@ In the spirit of free software, everyone is encouraged to help improve this proj
 - Report [bugs](link to bugs)
 - Suggest new features
 - Write or edit documentation
-- Write code (no patch is too small)
+- Write code (no patch is too small):
   - Fix typos
   - Add comments
   - Clean up code
