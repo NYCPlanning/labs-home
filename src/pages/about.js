@@ -205,34 +205,21 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 className="team-member--name" id="hannah-kates">Hannah Kates</h3>
+            <h3 className="team-member--name" id="nneka-sobers">Nneka Sobers</h3>
             <h4 className="team-member--title">Product Manager</h4>
             <div className="media-object">
               <div className="media-object-section">
                 {' '}
                 <img
                   className="thumbnail avatar"
-                  alt="Hannah Kates"
-                  src="/img/hannah-kates.jpg"
+                  src="/img/NnekaSobers_Headshotsq.jpg"
+                  alt="Nneka Sobers"
                 />
                 {' '}
               </div>
               <div className="media-object-section">
                 <p>
-                  Hannah joined Labs in Sept 2018, after working for two years
-                  in NYC Planning’s Capital Planning division where she led
-                  planning/process reforms focused on siting City facilities.
-                  She also developed core NYC Planning databases and product
-                  managed the creation of the
-                  {' '}
-                  <a
-                    href="http://capitalplanning.nyc.gov/facilities"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    NYC Facilities Explorer
-                  </a>
-                  .
+                  Nneka joined Planning Labs in March 2020. Her previous work includes conducting user research to understand how building environments influence social behavior and developing new tools to help communities develop/manage self-organized infrastructure systems. Nneka is passionate about increasing social impact through civic technology and empathetic design.
                 </p>
               </div>
             </div>
@@ -277,46 +264,6 @@ const AboutPage = () => (
               <div className="media-object-section">
                 <p>
                   Godfrey joined labs in May 2019. Previously he delivered spatial web applications for Oregon Metro&apos;s various departments like Parks, Property &amp; Environmental Services, and Planning, and also for the City of Salem. For the past decade he has had an interest in urban planning and creating software to help improve the built environment.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
-            <h3 className="team-member--name" id="brandyn-friedly">Brandyn Friedly</h3>
-            <h4 className="team-member--title">Developer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/brandyn-friedly.jpg"
-                  alt="Brandyn Friedly"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Brandyn joined Labs in November 2019, after working as a developer for the City of St. Paul.  He previously helped co-organize MaptimeNYC, where he fell in love with web mapping and open source communities.  Brandyn teaches data literacy and visualization at the School of Visual Arts.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
-            <h3 className="team-member--name" id="nneka-sobers">Nneka Sobers</h3>
-            <h4 className="team-member--title">Product Manager</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/NnekaSobers_Headshotsq.jpg"
-                  alt="Nneka Sobers"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Nneka joined Planning Labs in March 2020. Her previous work includes conducting user research to understand how building environments influence social behavior and developing new tools to help communities develop/manage self-organized infrastructure systems. Nneka is passionate about increasing social impact through civic technology and empathetic design.
                 </p>
               </div>
             </div>
@@ -369,6 +316,42 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>Julia joined Planning Labs in January 2019, after over three years working in internet advertising. She&apos;s passionate about civic tech, and looks forward to learning from the team and building open solutions to empower New Yorkers.</p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="hannah-kates">Hannah Kates</h3>
+            <h4 className="team-member--title">
+              Product Manager
+              <small className="nowrap"> (Sept 2018–August 2020)</small>
+            </h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  alt="Hannah Kates"
+                  src="/img/hannah-kates.jpg"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Hannah joined Labs in Sept 2018, after working for two years
+                  in NYC Planning’s Capital Planning division where she led
+                  planning/process reforms focused on siting City facilities.
+                  She also developed core NYC Planning databases and product
+                  managed the creation of the
+                  {' '}
+                  <a
+                    href="http://capitalplanning.nyc.gov/facilities"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    NYC Facilities Explorer
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </div>
@@ -427,6 +410,26 @@ const AboutPage = () => (
               <div className="media-object-section">
                 <p>
                   Kate joined Labs in August 2019. She previously built transportation and wayfinding tools with Conveyal and her own consultancy, Route. She is passionate about proactive government and multimodal cities. Kate teaches design and cartography at Pratt&apos;s Spatial Analysis and Visualization Initiative.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="brandyn-friedly">Brandyn Friedly</h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/brandyn-friedly.jpg"
+                  alt="Brandyn Friedly"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Brandyn joined Labs in November 2019, after working as a developer for the City of St. Paul.  He previously helped co-organize MaptimeNYC, where he fell in love with web mapping and open source communities.  Brandyn teaches data literacy and visualization at the School of Visual Arts.
                 </p>
               </div>
             </div>
