@@ -144,34 +144,6 @@ const AboutPage = () => (
         </h2>
         <div className="grid-x grid-padding-x">
           <div className="cell large-6">
-            <h3 className="team-member--name" id="andy-cochran">Andy Cochran</h3>
-            <h4 className="team-member--title">Interim Director | Designer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  alt="Andy Cochran"
-                  src="/img/andy-cochran.jpg"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Andy joined the founding team of Planning Labs in July, 2017
-                  after implementing New York City Council’s plan for digital
-                  inclusion and open government. As Design &amp; Creative
-                  Director at
-                  {' '}
-                  <a href="http://openplans.org/">OpenPlans</a>
-, he
-                  built collaborative mapping services and other civic
-                  engagement tools.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
             <h3 className="team-member--name" id="matt-gardner">Matt Gardner</h3>
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
@@ -225,30 +197,6 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 className="team-member--name" id="taylor-mcginnis">Taylor McGinnis</h3>
-            <h4 className="team-member--title">Developer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  alt="Taylor McGinnis"
-                  src="/img/taylor-mcginnis.jpg"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Taylor joined Planning Labs in June 2018, after creating data
-                  visualizations as a Fellow for the Pratt Center for Community
-                  Development. Originally introduced to mapping as an
-                  environmental geologist, she now works as a developer and web
-                  mapper focused on open data and city planning issues.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
             <h3 className="team-member--name" id="godfrey-yeung">Godfrey Yeung</h3>
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
@@ -295,6 +243,33 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>Chris developed the concept for Planning Labs in 2017, after leading the development of modern, open mapping applications in DCP’s Capital Planning Division. He is an urbanist, open data advocate, civic technologist, and a former Code for America Brigade leader.</p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="andy-cochran">Andy Cochran</h3>
+            <h4 className="team-member--title">Interim Director | Designer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  alt="Andy Cochran"
+                  src="/img/andy-cochran.jpg"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Andy joined the founding team of Planning Labs in July, 2017
+                  after implementing New York City Council’s plan for digital
+                  inclusion and open government. As Design &amp; Creative
+                  Director at
+                  {' '}
+                  <a href="http://openplans.org/">OpenPlans</a>, he
+                  built collaborative mapping services and other civic
+                  engagement tools.
+                </p>
               </div>
             </div>
           </div>
@@ -351,6 +326,30 @@ const AboutPage = () => (
                     NYC Facilities Explorer
                   </a>
                   .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="taylor-mcginnis">Taylor McGinnis</h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  alt="Taylor McGinnis"
+                  src="/img/taylor-mcginnis.jpg"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Taylor joined Planning Labs in June 2018, after creating data
+                  visualizations as a Fellow for the Pratt Center for Community
+                  Development. Originally introduced to mapping as an
+                  environmental geologist, she now works as a developer and web
+                  mapper focused on open data and city planning issues.
                 </p>
               </div>
             </div>
