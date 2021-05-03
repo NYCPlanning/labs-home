@@ -225,7 +225,7 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   src="/img/david.jpg"
-                  alt='David "The Hawk" Hochbaum'
+                  alt="David &quot;The Hawk&quot; Hochbaum"
                 />
                 {' '}
               </div>
