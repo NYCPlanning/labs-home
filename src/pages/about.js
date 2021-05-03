@@ -236,7 +236,7 @@ const AboutPage = () => (
                 {' '}
                 <img
                   className="thumbnail avatar"
-                  alt="Andy Cochran"
+                  alt="Chris Whong"
                   src="/img/chris-whong.jpg"
                 />
                 {' '}
@@ -266,9 +266,13 @@ const AboutPage = () => (
                   inclusion and open government. As Design &amp; Creative
                   Director at
                   {' '}
-                  <a href="http://openplans.org/">OpenPlans</a>, he
-                  built collaborative mapping services and other civic
-                  engagement tools.
+                  <a
+                    href="http://openplans.org/"
+                  >
+                    OpenPlans
+                  </a>
+                  {', '}
+                  he built collaborative mapping services and other civic engagement tools.
                 </p>
               </div>
             </div>
