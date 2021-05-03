@@ -216,6 +216,26 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="david-hochbaum">David &quot;The Hawk&quot; Hochbaum</h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/david.jpg"
+                  alt="David &quot;The Hawk&quot; Hochbaum"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  David joined Planning Labs in 2020. Previously he planned and executed digital marketing campaigns for some of the world&apos;s most recognizable brands.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
