@@ -27,6 +27,7 @@ You will need the following things properly installed on your computer.
 
 * **[Git](https://git-scm.com/)**
 * **[Node.js](https://nodejs.org/)** (with NPM)
+  - This installation was tested using Node v14.15.0
 * **[gatsby-cli](https://www.npmjs.com/package/gatsby-cli)** (to run [Gatsby](https://www.gatsbyjs.org/) commands)
 * **[Yarn](https://yarnpkg.com/)**
 
@@ -48,7 +49,7 @@ You will need the following things properly installed on your computer.
    ```sh
    gatsby develop
    ```
-5.  Go to `localhost:8080` in your web browser, make any code changes in the [src directory](src) and watch as your webpage automatically reloads to show your changes.
+5.  Go to `localhost:8000` in your web browser, make any code changes in the [src directory](src) and watch as your webpage automatically reloads to show your changes.
 
 _Optional_
 - `gatsby build` — Gatsby will perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
