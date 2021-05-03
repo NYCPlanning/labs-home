@@ -39,8 +39,7 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write  \"src/**/*.js\"",
     "test": "NODE_ENV=test node ./node_modules/mocha/bin/mocha ./test/**/*.js --exit",
-    "deploy": "npm run build",
-    "prepare": "husky install"
+    "deploy": "npm run build"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -51,16 +50,8 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.3",
     "eslint-plugin-standard": "^4.0.0",
-    "husky": "^6.0.0",
-    "lint-staged": ">=10",
     "mocha": "^5.2.0",
     "prettier": "^1.15.3",
     "prettier-check": "^2.0.0"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --cache --fix",
-      "prettier --write"
-    ]
   }
 }
