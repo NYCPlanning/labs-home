@@ -217,7 +217,7 @@ const AboutPage = () => (
             </div>
           </div>
           <div className="cell large-6">
-            <h3 className="team-member--name" id="david-hochbaum">David "The Hawk" Hochbaum</h3>
+            <h3 className="team-member--name" id="david-hochbaum">David &quot;The Hawk&quot; Hochbaum</h3>
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
