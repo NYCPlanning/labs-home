@@ -45,20 +45,22 @@ You will need the following things properly installed on your computer.
    ```sh
    yarn
    ```
+4. Copy and rename .env-template, and fill in the correct Airtable API KEY (see 1password)
 4. Start your development server
    ```sh
-   gatsby develop
+   netlify dev
    ```
 5.  Go to `localhost:8000` in your web browser, make any code changes in the [src directory](src) and watch as your webpage automatically reloads to show your changes.
 
 _Optional_
 - `gatsby build` — Gatsby will perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
 - `gatsby serve` — Gatsby starts a local HTML server for testing your built site.
+- `netlify dev` — 
 
 ## Backend services
 
 - **[Airtable](https://airtable.com/)** (used to manage project content)
-- **[labs-ideas-api](https://github.com/NYCPlanning/labs-ideas/)** (pulls in projects from Airtable)
+- **[Netlify Functions](https://www.netlify.com/products/functions/)** (Hosts private functions to pull data)
 
 ## Deployment
 
