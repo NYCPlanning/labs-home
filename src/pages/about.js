@@ -231,7 +231,7 @@ const AboutPage = () => (
               </div>
               <div className="media-object-section">
                 <p>
-                  David joined Planning Labs in 2020. Previously he planned and executed digital marketing campaigns for some of the world's most recognizable brands.
+                  David joined Planning Labs in 2020. Previously he planned and executed digital marketing campaigns for some of the world&apos;s most recognizable brands.
                 </p>
               </div>
             </div>
