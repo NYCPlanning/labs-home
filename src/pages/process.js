@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "gatsby-link";
-import { StickyContainer, Sticky } from "react-sticky";
-import Scrollspy from "react-scrollspy";
-import Layout from "../components/layout";
+import React from 'react';
+import Link from 'gatsby-link';
+import { StickyContainer, Sticky } from 'react-sticky';
+import Scrollspy from 'react-scrollspy';
+import Layout from '../components/layout';
 
-import Hero from "../components/hero";
+import Hero from '../components/hero';
 
 const ProcessPage = () => (
   <Layout>
@@ -21,13 +21,13 @@ const ProcessPage = () => (
                 <div className="sticky" style={style}>
                   <h4
                     className="page-nav--header header-small"
-                    style={{ paddingTop: "1rem" }}
+                    style={{ paddingTop: '1rem' }}
                   >
                     From Idea to Pipeline
                   </h4>
                   <Scrollspy
                     className="menu vertical"
-                    items={["step-1", "step-2", "step-3", "step-4", "step-5"]}
+                    items={['step-1', 'step-2', 'step-3', 'step-4', 'step-5']}
                     currentClassName="is-active"
                   >
                     <li>

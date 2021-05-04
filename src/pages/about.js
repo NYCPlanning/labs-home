@@ -1,14 +1,14 @@
-import React from "react";
-import Layout from "../components/layout";
+import React from 'react';
+import Layout from '../components/layout';
 
-import Hero from "../components/hero";
+import Hero from '../components/hero';
 
 import {
   BookSVG,
   HandshakeSVG,
   DocumentSVG,
-  AgileSVG
-} from "../components/svg-icons";
+  AgileSVG,
+} from '../components/svg-icons';
 
 const AboutPage = () => (
   <Layout>
@@ -27,17 +27,21 @@ const AboutPage = () => (
               What is Planning Labs?
             </h2>
             <p className="lead">
-              Planning Labs is a division of the{" "}
+              Planning Labs is a division of the
+              {' '}
               <a href="https://www1.nyc.gov/site/planning/index.page">
                 NYC Department of City Planning
-              </a>{" "}
+              </a>
+              {' '}
               (DCP) that embraces open technology, agile development, and
               user-centered design to build impactful products with NYC’s Urban
               Planners.
             </p>
             <p>
-              We are inspired by the mission and successes of{" "}
-              <a href="https://18f.gsa.gov/">18F</a>, and are applying a similar
+              We are inspired by the mission and successes of
+              {' '}
+              <a href="https://18f.gsa.gov/">18F</a>
+              , and are applying a similar
               philosophy at a much smaller scale within our agency.
             </p>
           </div>
@@ -50,7 +54,7 @@ const AboutPage = () => (
         </h2>
         <div className="grid-x grid-padding-x">
           <div className="cell large-11">
-            <p className="lead" style={{ marginBottom: "2rem" }}>
+            <p className="lead" style={{ marginBottom: '2rem' }}>
               We strive to work in a modern way and use best practices on all
               our projects. Here’s what that means to us:
             </p>
@@ -123,12 +127,14 @@ const AboutPage = () => (
           </div>
         </div>
         <p className="text-center">
-          Read the full text of{" "}
+          Read the full text of
+          {' '}
           <strong>
             <a href="https://github.com/NYCPlanning/labs-charter">
               our charter
             </a>
-          </strong>{" "}
+          </strong>
+          {' '}
           on GitHub.
         </p>
         <hr />
@@ -144,26 +150,29 @@ const AboutPage = () => (
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   alt="Matt Gardner"
                   src="/img/matt-gardner.jpg"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
                   Matt joined Planning Labs as a founding member in July, 2017
                   after creating digital solutions for the City of Boston’s
                   Summer Youth Employment Program. He also helped establish the
-                  Metropolitan Area Planning Council’s{" "}
+                  Metropolitan Area Planning Council’s
+                  {' '}
                   <a
                     href="http://data.mapc.org"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Digital Services
-                  </a>{" "}
+                  </a>
+                  {' '}
                   division, the first of its kind in regional planning.
                 </p>
               </div>
@@ -176,12 +185,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Product Manager</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/NnekaSobers_Headshotsq.jpg"
                   alt="Nneka Sobers"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -202,12 +212,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/godfrey.jpg"
                   alt="Godfrey Yeung"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -228,12 +239,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/david.jpg"
                   alt='David "The Hawk" Hochbaum'
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -268,12 +280,13 @@ const AboutPage = () => (
             </h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   alt="Chris Whong"
                   src="/img/chris-whong.jpg"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -293,20 +306,23 @@ const AboutPage = () => (
             <h4 className="team-member--title">Interim Director | Designer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   alt="Andy Cochran"
                   src="/img/andy-cochran.jpg"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
                   Andy joined the founding team of Planning Labs in July, 2017
                   after implementing New York City Council’s plan for digital
                   inclusion and open government. As Design &amp; Creative
-                  Director at <a href="http://openplans.org/">OpenPlans</a>
-                  {", "}
+                  Director at
+                  {' '}
+                  <a href="http://openplans.org/">OpenPlans</a>
+                  {', '}
                   he built collaborative mapping services and other civic
                   engagement tools.
                 </p>
@@ -323,12 +339,13 @@ const AboutPage = () => (
             </h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/julia-hogan.jpg"
                   alt="Julia Hogan"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -350,12 +367,13 @@ const AboutPage = () => (
             </h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   alt="Hannah Kates"
                   src="/img/hannah-kates.jpg"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -363,7 +381,8 @@ const AboutPage = () => (
                   in NYC Planning’s Capital Planning division where she led
                   planning/process reforms focused on siting City facilities.
                   She also developed core NYC Planning databases and product
-                  managed the creation of the{" "}
+                  managed the creation of the
+                  {' '}
                   <a
                     href="http://capitalplanning.nyc.gov/facilities"
                     target="_blank"
@@ -383,12 +402,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   alt="Taylor McGinnis"
                   src="/img/taylor-mcginnis.jpg"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -411,12 +431,13 @@ const AboutPage = () => (
             </h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/rahul.jpg"
                   alt="Rahul Alexander"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -436,12 +457,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Product Manager</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/pichot.jpg"
                   alt="Jonathan Pichot"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -462,12 +484,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Interaction Designer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/kate-chanba.jpg"
                   alt="Kate Chanba"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -488,12 +511,13 @@ const AboutPage = () => (
             <h4 className="team-member--title">Developer</h4>
             <div className="media-object">
               <div className="media-object-section">
-                {" "}
+                {' '}
                 <img
                   className="thumbnail avatar"
                   src="/img/brandyn-friedly.jpg"
                   alt="Brandyn Friedly"
-                />{" "}
+                />
+                {' '}
               </div>
               <div className="media-object-section">
                 <p>
@@ -520,14 +544,16 @@ const AboutPage = () => (
               technologist Chris Whong, with planning and guidance from Danny
               Fuchs, Director of Capital Planning, Hassan Adekoya, CIO, and Jon
               Kaufman, COO. After a year of experimentation and success building
-              the{" "}
+              the
+              {' '}
               <a
                 href="https://capitalplanning.nyc"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Capital Planning Platform
-              </a>{" "}
+              </a>
+              {' '}
               using a 100% open source stack, a pitch was made to
               institutionalize modern development practices in the agency by
               establishing a service delivery unit within the Information

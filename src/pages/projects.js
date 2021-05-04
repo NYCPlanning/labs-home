@@ -1,13 +1,13 @@
-import React from "react";
-import { Router, Link } from "@reach/router";
-import FontAwesome from "react-fontawesome";
-import fetch from "node-fetch";
-import Layout from "../components/layout";
+import React from 'react';
+import { Router, Link } from '@reach/router';
+import FontAwesome from 'react-fontawesome';
+import fetch from 'node-fetch';
+import Layout from '../components/layout';
 
-import Hero from "../components/hero";
-import Project from "../components/project";
+import Hero from '../components/hero';
+import Project from '../components/project';
 
-const projectsUri = "/.netlify/functions/projects";
+const projectsUri = '/.netlify/functions/projects';
 
 const ProjectCard = ({ project }) => {
   const url = project.thumbnail
@@ -37,7 +37,7 @@ const DevCard = ({ project }) => {
         {project.name}
         <br />
         <small>
-          {project.github ? project.github.split("github.com/")[1] : null}
+          {project.github ? project.github.split('github.com/')[1] : null}
         </small>
       </a>
     );
@@ -62,12 +62,12 @@ const DevCard = ({ project }) => {
     <div className="media-object">
       <div
         className="media-object-section"
-        style={{ paddingRight: "1rem", opacity: "0.7" }}
+        style={{ paddingRight: '1rem', opacity: '0.7' }}
       >
         {devCardIcon}
       </div>
       <div className="media-object-section">
-        <h4 className="header-small" style={{ marginBottom: "0.5rem" }}>
+        <h4 className="header-small" style={{ marginBottom: '0.5rem' }}>
           {devCardTitle}
         </h4>
         <p className="text-small">{project.tagline}</p>
@@ -81,7 +81,7 @@ class ProjectsPage extends React.Component {
     super(props);
 
     this.state = {
-      projects: []
+      projects: [],
     };
   }
 
@@ -92,7 +92,7 @@ class ProjectsPage extends React.Component {
   fetchProjectsData() {
     return fetch(projectsUri)
       .then(response => response.json())
-      .then(projects => {
+      .then((projects) => {
         this.setState({ projects });
       });
   }
@@ -101,7 +101,7 @@ class ProjectsPage extends React.Component {
     const { projects } = this.state;
 
     const projectCards = () => {
-      const featuredProjects = projects.filter(d => d.type === "feature");
+      const featuredProjects = projects.filter(d => d.type === 'feature');
       const cards = featuredProjects.map(project => (
         <ProjectCard key={project.slug} project={project} />
       ));
@@ -110,7 +110,7 @@ class ProjectsPage extends React.Component {
     };
 
     const devCards = () => {
-      const devProjects = projects.filter(d => d.type === "resource");
+      const devProjects = projects.filter(d => d.type === 'resource');
 
       if (devProjects.length) {
         const cards = devProjects.map(project => (
@@ -127,7 +127,7 @@ class ProjectsPage extends React.Component {
     };
 
     const currentCards = () => {
-      const currentProjects = projects.filter(d => d.type === "current");
+      const currentProjects = projects.filter(d => d.type === 'current');
 
       if (currentProjects.length) {
         const cards = currentProjects.map(project => (
@@ -147,8 +147,8 @@ class ProjectsPage extends React.Component {
       <div
         className="main text-center"
         style={{
-          padding: "20vh 0",
-          color: "#888"
+          padding: '20vh 0',
+          color: '#888',
         }}
       >
         <FontAwesome name="refresh" size="3x" spin />
@@ -194,7 +194,7 @@ class ProjectsPage extends React.Component {
 
     const ProjectLayout = () => {
       const { props } = this;
-      const id = props.location.pathname.split("/")[2];
+      const id = props.location.pathname.split('/')[2];
       const project = projects.find(({ slug }) => slug === id);
 
       return <Project project={project} />;
