@@ -4,13 +4,13 @@ import FontAwesome from 'react-fontawesome';
 import fetch from 'node-fetch';
 
 class BlogPosts extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = { posts: null };
   }
 
-  componentDidMount () {
-    fetch('https://labs-home-api.herokuapp.com/posts?tag=nyc-planning-labs')
+  componentDidMount() {
+    fetch('/.netlify/functions/posts?tag=nyc-planning-labs')
       .then(response => response.json())
       .then((json) => {
         const posts = json.items;
@@ -18,13 +18,13 @@ class BlogPosts extends React.Component {
       });
   }
 
-  render () {
+  render() {
     const renderPosts = posts => posts.map((post) => {
       let postImage = null;
       if (post.image) {
         postImage = (
           <p>
-            <a href={post.url}>
+            <a href={post.link}>
               <img src={post.image} alt="blog post" />
             </a>
           </p>
@@ -33,15 +33,17 @@ class BlogPosts extends React.Component {
 
       return (
         <div key={post.created} className="cell large-auto">
-          <span className="post-date">{moment(post.created).format('LL')}</span>
+          <span className="post-date">
+            {moment(post.created).format('LL')}
+          </span>
           <h1 className="header-medium">
-            <a href={post.url}>{post.title}</a>
+            <a href={post.link}>{post.title}</a>
           </h1>
           {postImage}
           <p className="post-excerpt">{post.description}</p>
           <a
             className="button small "
-            href={post.url}
+            href={post.link}
             target="_blank"
             rel="noopener noreferrer"
           >

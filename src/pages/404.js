@@ -19,7 +19,7 @@ const NotFoundPage = () => (
               Try checking the URL for errors or return to the
               {' '}
               <Link to="/">homepage</Link>
-.
+              .
             </p>
           </div>
         </div>

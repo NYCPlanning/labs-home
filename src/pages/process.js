@@ -23,7 +23,7 @@ const ProcessPage = () => (
                     className="page-nav--header header-small"
                     style={{ paddingTop: '1rem' }}
                   >
-                      From Idea to Pipeline
+                    From Idea to Pipeline
                   </h4>
                   <Scrollspy
                     className="menu vertical"
@@ -32,22 +32,22 @@ const ProcessPage = () => (
                   >
                     <li>
                       <Link to="/process/#step-1" className="">
-                          Step 1: Idea Submission
+                        Step 1: Idea Submission
                       </Link>
                     </li>
                     <li>
                       <Link to="/process/#step-2" className="">
-                          Step 2: Idea Vetting
+                        Step 2: Idea Vetting
                       </Link>
                     </li>
                     <li>
                       <Link to="/process/#step-3" className="">
-                          Step 3: Project Selection
+                        Step 3: Project Selection
                       </Link>
                     </li>
                     <li>
                       <Link to="/process/#step-4" className="">
-                          Step 4: Pipeline Posting
+                        Step 4: Pipeline Posting
                       </Link>
                     </li>
                   </Scrollspy>

@@ -6,7 +6,9 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "anchorate": "^1.1.0",
+    "cheerio": "^1.0.0-rc.6",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "foundation-sites": "^6.5.1",
     "gatsby": "^2.0.91",
     "gatsby-link": "^2.0.8",
@@ -26,7 +28,10 @@
     "react-router-dom": "^4.2.2",
     "react-scrollable-anchor": "^0.6.1",
     "react-scrollspy": "^3.3.4",
-    "react-sticky": "^6.0.1"
+    "react-sticky": "^6.0.1",
+    "rss-parser": "^3.12.0",
+    "slug": "^5.0.0",
+    "superagent": "^6.1.0"
   },
   "keywords": [
     "gatsby"
@@ -39,7 +44,8 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write  \"src/**/*.js\"",
     "test": "NODE_ENV=test node ./node_modules/mocha/bin/mocha ./test/**/*.js --exit",
-    "deploy": "npm run build"
+    "deploy": "npm run build",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -50,8 +56,15 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.3",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": ">=10",
     "mocha": "^5.2.0",
     "prettier": "^1.15.3",
     "prettier-check": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix"
+    ]
   }
 }

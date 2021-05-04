@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Project from '../components/project';
 
-const projectsUri = 'https://labs-home-api.herokuapp.com/projects';
+const projectsUri = '/.netlify/functions/projects';
 
 const ProjectCard = ({ project }) => {
   const url = project.thumbnail
@@ -77,7 +77,7 @@ const DevCard = ({ project }) => {
 };
 
 class ProjectsPage extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -85,11 +85,11 @@ class ProjectsPage extends React.Component {
     };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchProjectsData();
   }
 
-  fetchProjectsData () {
+  fetchProjectsData() {
     return fetch(projectsUri)
       .then(response => response.json())
       .then((projects) => {
@@ -97,7 +97,7 @@ class ProjectsPage extends React.Component {
       });
   }
 
-  render () {
+  render() {
     const { projects } = this.state;
 
     const projectCards = () => {
@@ -206,10 +206,7 @@ class ProjectsPage extends React.Component {
       <Layout>
         <Router>
           <ProjectsGrid path="/projects" />
-          <ProjectLayout
-            path="/projects/:projectid"
-            location={location}
-          />
+          <ProjectLayout path="/projects/:projectid" location={location} />
         </Router>
       </Layout>
     );

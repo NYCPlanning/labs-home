@@ -25,11 +25,14 @@ const StatusCard = ({ status }) => {
       <div className="grid-x grid-margin-x text-small">
         <div className="cell">
           <p className="float-right">
-            <a href={`https://updown.io/${token}`} target="_blank" rel="noopener noreferrer">
+            <a
+              href={`https://updown.io/${token}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesome name="external-link" fixedWidth />
               {' '}
-View full
-              report
+              View full report
             </a>
           </p>
           <h4 className={down ? 'header-medium status-down' : 'header-medium'}>
@@ -68,7 +71,7 @@ View full
             style={{ margin: '-0.25rem 0.5rem 0.5rem 0', color: '#888' }}
           />
           {uptime}
-%&nbsp;Uptime
+          %&nbsp;Uptime
           <br />
           <FontAwesome
             name="certificate"
@@ -82,7 +85,7 @@ View full
 };
 
 class StatusPage extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -90,11 +93,11 @@ class StatusPage extends React.Component {
     };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchStatusData();
   }
 
-  fetchStatusData () {
+  fetchStatusData() {
     return fetch(statusURI)
       .then(response => response.json())
       .then((statuses) => {
@@ -102,7 +105,7 @@ class StatusPage extends React.Component {
       });
   }
 
-  render () {
+  render() {
     const { statuses } = this.state;
     const statusCards = () => {
       const cards = statuses.map(status => (
