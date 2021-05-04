@@ -8,6 +8,7 @@
     "anchorate": "^1.1.0",
     "cheerio": "^1.0.0-rc.6",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "foundation-sites": "^6.5.1",
     "gatsby": "^2.0.91",
     "gatsby-link": "^2.0.8",

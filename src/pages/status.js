@@ -1,12 +1,13 @@
-import React from 'react';
-import FontAwesome from 'react-fontawesome';
-import Moment from 'react-moment';
-import fetch from 'node-fetch';
-import Layout from '../components/layout';
+import React from "react";
+import FontAwesome from "react-fontawesome";
+import Moment from "react-moment";
+import fetch from "node-fetch";
+import Layout from "../components/layout";
 
-import Hero from '../components/hero';
+import Hero from "../components/hero";
 
-const statusURI = 'https://updown.io/api/checks?api-key=ro-nzbag1HJmfQBkkLjF12d';
+const statusURI =
+  "https://updown.io/api/checks?api-key=ro-nzbag1HJmfQBkkLjF12d";
 
 const StatusCard = ({ status }) => {
   const {
@@ -16,7 +17,7 @@ const StatusCard = ({ status }) => {
     down,
     last_check_at: lastCheckAt,
     next_check_at: nextCheckAt,
-    ssl,
+    ssl
   } = status;
 
   const { valid: sslValid } = ssl;
@@ -25,16 +26,17 @@ const StatusCard = ({ status }) => {
       <div className="grid-x grid-margin-x text-small">
         <div className="cell">
           <p className="float-right">
-            <a href={`https://updown.io/${token}`} target="_blank" rel="noopener noreferrer">
-              <FontAwesome name="external-link" fixedWidth />
-              {' '}
-View full
-              report
+            <a
+              href={`https://updown.io/${token}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesome name="external-link" fixedWidth /> View full report
             </a>
           </p>
-          <h4 className={down ? 'header-medium status-down' : 'header-medium'}>
+          <h4 className={down ? "header-medium status-down" : "header-medium"}>
             <FontAwesome
-              className={down ? 'status-down' : 'status-up'}
+              className={down ? "status-down" : "status-up"}
               name="circle"
               fixedWidth
             />
@@ -48,33 +50,29 @@ View full
             size="2x"
             fixedWidth
             className="float-left"
-            style={{ margin: '0.25rem 0.5rem 0.5rem 0', color: '#888' }}
+            style={{ margin: "0.25rem 0.5rem 0.5rem 0", color: "#888" }}
           />
           <span className="nowrap">
-            Last Check:
-            {' '}
-            <Moment format="k:mm:ss">{lastCheckAt}</Moment>
+            Last Check: <Moment format="k:mm:ss">{lastCheckAt}</Moment>
             <br />
           </span>
           <span className="nowrap">
-            Next Check:
-            {' '}
-            <Moment format="k:mm:ss">{nextCheckAt}</Moment>
+            Next Check: <Moment format="k:mm:ss">{nextCheckAt}</Moment>
           </span>
         </div>
         <div className="cell large-6">
           <FontAwesome
             name="bar-chart"
-            style={{ margin: '-0.25rem 0.5rem 0.5rem 0', color: '#888' }}
+            style={{ margin: "-0.25rem 0.5rem 0.5rem 0", color: "#888" }}
           />
           {uptime}
-%&nbsp;Uptime
+          %&nbsp;Uptime
           <br />
           <FontAwesome
             name="certificate"
-            style={{ margin: '0.25rem 0.5rem 0.5rem 0', color: '#888' }}
+            style={{ margin: "0.25rem 0.5rem 0.5rem 0", color: "#888" }}
           />
-          {sslValid ? 'SSL OK' : 'SSL invalid'}
+          {sslValid ? "SSL OK" : "SSL invalid"}
         </div>
       </div>
     </div>
@@ -82,27 +80,27 @@ View full
 };
 
 class StatusPage extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.state = {
-      statuses: [],
+      statuses: []
     };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchStatusData();
   }
 
-  fetchStatusData () {
+  fetchStatusData() {
     return fetch(statusURI)
       .then(response => response.json())
-      .then((statuses) => {
+      .then(statuses => {
         this.setState({ statuses });
       });
   }
 
-  render () {
+  render() {
     const { statuses } = this.state;
     const statusCards = () => {
       const cards = statuses.map(status => (
@@ -116,8 +114,8 @@ class StatusPage extends React.Component {
       <div
         className="main text-center"
         style={{
-          padding: '20vh 0',
-          color: '#888',
+          padding: "20vh 0",
+          color: "#888"
         }}
       >
         <FontAwesome name="refresh" size="3x" spin />

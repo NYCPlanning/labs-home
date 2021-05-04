@@ -1,10 +1,10 @@
-import React from 'react';
-import Layout from '../components/layout';
+import React from "react";
+import Layout from "../components/layout";
 
-import BlogPosts from '../components/blog-posts';
-import Hero from '../components/hero';
+import BlogPosts from "../components/blog-posts";
+import Hero from "../components/hero";
 
-import { SkylineSVG, MonitorSVG, FolderSVG } from '../components/svg-icons';
+import { SkylineSVG, MonitorSVG, FolderSVG } from "../components/svg-icons";
 
 const IndexPage = () => (
   <Layout>
@@ -23,10 +23,10 @@ const IndexPage = () => (
             <div className="grid-x grid-margin-x">
               <div className="cell large-auto">
                 <p className="lead">
-                      We believe better outcomes can be achieved using modern
-                      design and development practices along with open
-                      technology. We are civic technologists here to help
-                      support the Department of City Planning&apos;s mission.
+                  We believe better outcomes can be achieved using modern design
+                  and development practices along with open technology. We are
+                  civic technologists here to help support the Department of
+                  City Planning&apos;s mission.
                 </p>
               </div>
               <div className="cell large-auto">
@@ -70,11 +70,10 @@ const IndexPage = () => (
 
             <div className="recent-posts-container">
               <h2 className="header-xlarge">
-                    Recent blog posts
-                {' '}
-                <small style={{ fontSize: '0.6em' }}>
+                Recent blog posts{" "}
+                <small style={{ fontSize: "0.6em" }}>
                   <a href="https://medium.com/tag/nyc-planning-labs/latest">
-                        See All (medium.com)
+                    See All (medium.com)
                   </a>
                 </small>
               </h2>
