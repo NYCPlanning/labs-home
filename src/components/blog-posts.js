@@ -24,7 +24,7 @@ class BlogPosts extends React.Component {
       if (post.image) {
         postImage = (
           <p>
-            <a href={post.url}>
+            <a href={post.link}>
               <img src={post.image} alt="blog post" />
             </a>
           </p>
@@ -37,13 +37,13 @@ class BlogPosts extends React.Component {
             {moment(post.created).format('LL')}
           </span>
           <h1 className="header-medium">
-            <a href={post.url}>{post.title}</a>
+            <a href={post.link}>{post.title}</a>
           </h1>
           {postImage}
           <p className="post-excerpt">{post.description}</p>
           <a
             className="button small "
-            href={post.url}
+            href={post.link}
             target="_blank"
             rel="noopener noreferrer"
           >

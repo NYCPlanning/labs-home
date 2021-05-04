@@ -1,5 +1,7 @@
-const Feed = require('rss-to-json');
+const Parser = require('rss-parser');
 const cheerio = require('cheerio');
+
+const parser = new Parser();
 
 exports.handler = async (event) => {
   const { tag, limit = 4 } = event.queryStringParameters;
@@ -10,10 +12,10 @@ exports.handler = async (event) => {
     feedUrl = 'https://medium.com/feed/nyc-planning-digital?truncated=true';
   }
 
-  const rss = await Feed.load(feedUrl);
-
-  rss.items.map((item) => {
-    const $ = cheerio.load(item.description);
+  const rss = await parser.parseURL(feedUrl);
+  rss.items.forEach((item) => {
+    console.log(item);
+    const $ = cheerio.load(item.content);
     const parsedDescription = $('.medium-feed-snippet').text();
     const parsedImage = $('.medium-feed-image img').attr('src');
 
