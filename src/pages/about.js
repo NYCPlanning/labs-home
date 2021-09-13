@@ -206,13 +206,13 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   src="/img/natasha.jpg"
-                  alt="Godfrey Yeung"
+                  alt="Natasha Toal"
                 />
                 {' '}
               </div>
               <div className="media-object-section">
                 <p>
-                  <!-- Insert bio here -->
+
                 </p>
               </div>
             </div>
@@ -228,13 +228,13 @@ const AboutPage = () => (
                 <img
                   className="thumbnail avatar"
                   src="/img/tyler.jpg"
-                  alt='David "The Hawk" Hochbaum'
+                  alt='Tyler Matteo'
                 />
                 {' '}
               </div>
               <div className="media-object-section">
                 <p>
-                  <!-- Insert bio here -->
+
                 </p>
               </div>
             </div>
