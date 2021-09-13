@@ -194,6 +194,51 @@ const AboutPage = () => (
               </div>
             </div>
           </div>
+
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="godfrey-yeung">
+              Natasha Toal
+            </h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/natasha.jpg"
+                  alt="Godfrey Yeung"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  <!-- Insert bio here -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="david-hochbaum">
+              Tyler Matteo
+            </h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/tyler.jpg"
+                  alt='David "The Hawk" Hochbaum'
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  <!-- Insert bio here -->
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <input type="checkbox" id="past-team-members-input" />
