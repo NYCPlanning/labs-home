@@ -144,68 +144,6 @@ const AboutPage = () => (
         </h2>
         <div className="grid-x grid-padding-x">
           <div className="cell large-6">
-            <h3 className="team-member--name" id="matt-gardner">
-              Matt Gardner
-            </h3>
-            <h4 className="team-member--title">Developer</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  alt="Matt Gardner"
-                  src="/img/matt-gardner.jpg"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Matt joined Planning Labs as a founding member in July, 2017
-                  after creating digital solutions for the City of Boston’s
-                  Summer Youth Employment Program. He also helped establish the
-                  Metropolitan Area Planning Council’s
-                  {' '}
-                  <a
-                    href="http://data.mapc.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Digital Services
-                  </a>
-                  {' '}
-                  division, the first of its kind in regional planning.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
-            <h3 className="team-member--name" id="nneka-sobers">
-              Nneka Sobers
-            </h3>
-            <h4 className="team-member--title">Product Manager</h4>
-            <div className="media-object">
-              <div className="media-object-section">
-                {' '}
-                <img
-                  className="thumbnail avatar"
-                  src="/img/NnekaSobers_Headshotsq.jpg"
-                  alt="Nneka Sobers"
-                />
-                {' '}
-              </div>
-              <div className="media-object-section">
-                <p>
-                  Nneka joined Planning Labs in March 2020. Her previous work
-                  includes conducting user research to understand how building
-                  environments influence social behavior and developing new
-                  tools to help communities develop/manage self-organized
-                  infrastructure systems. Nneka is passionate about increasing
-                  social impact through civic technology and empathetic design.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="cell large-6">
             <h3 className="team-member--name" id="godfrey-yeung">
               Godfrey Yeung
             </h3>
@@ -252,6 +190,51 @@ const AboutPage = () => (
                   David joined Planning Labs in 2020. Previously he planned and
                   executed digital marketing campaigns for some of the
                   world&apos;s most recognizable brands.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="natasha-toal">
+              Natasha Toal
+            </h3>
+            <h4 className="team-member--title">Interaction Designer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/natasha.jpg"
+                  alt="Natasha Toal"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Natasha joined Planning Labs in June 2021. Previously she designed marketing assets across platforms for NYC Department of Finance and NYC Department of Social Services. She is passionate about human-centered design and innovation within City government.  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="david-hochbaum">
+              Tyler Matteo
+            </h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/tyler.jpg"
+                  alt='Tyler Matteo'
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+
                 </p>
               </div>
             </div>
@@ -526,6 +509,68 @@ const AboutPage = () => (
                   co-organize MaptimeNYC, where he fell in love with web mapping
                   and open source communities. Brandyn teaches data literacy and
                   visualization at the School of Visual Arts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="matt-gardner">
+              Matt Gardner
+            </h3>
+            <h4 className="team-member--title">Developer</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  alt="Matt Gardner"
+                  src="/img/matt-gardner.jpg"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Matt joined Planning Labs as a founding member in July, 2017
+                  after creating digital solutions for the City of Boston’s
+                  Summer Youth Employment Program. He also helped establish the
+                  Metropolitan Area Planning Council’s
+                  {' '}
+                  <a
+                    href="http://data.mapc.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Digital Services
+                  </a>
+                  {' '}
+                  division, the first of its kind in regional planning.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="cell large-6">
+            <h3 className="team-member--name" id="nneka-sobers">
+              Nneka Sobers
+            </h3>
+            <h4 className="team-member--title">Product Manager</h4>
+            <div className="media-object">
+              <div className="media-object-section">
+                {' '}
+                <img
+                  className="thumbnail avatar"
+                  src="/img/NnekaSobers_Headshotsq.jpg"
+                  alt="Nneka Sobers"
+                />
+                {' '}
+              </div>
+              <div className="media-object-section">
+                <p>
+                  Nneka joined Planning Labs in March 2020. Her previous work
+                  includes conducting user research to understand how building
+                  environments influence social behavior and developing new
+                  tools to help communities develop/manage self-organized
+                  infrastructure systems. Nneka is passionate about increasing
+                  social impact through civic technology and empathetic design.
                 </p>
               </div>
             </div>
