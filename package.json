@@ -19,7 +19,7 @@
     "mapbox-gl": "^0.53.0",
     "moment": "^2.23.0",
     "motion-ui": "^2.0.3",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-fontawesome": "^1.6.1",
