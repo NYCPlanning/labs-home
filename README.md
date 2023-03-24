@@ -26,8 +26,7 @@ In the spirit of free software, everyone is encouraged to help improve this proj
 You will need the following things properly installed on your computer.
 
 * **[Git](https://git-scm.com/)**
-* **[Node.js](https://nodejs.org/)** (with NPM)
-  - This installation was tested using Node v14.15.0
+* **[Node.js](https://nodejs.org/)** (with NPM) **version listed in .nvmrc**
 * **[gatsby-cli](https://www.npmjs.com/package/gatsby-cli)** (to run [Gatsby](https://www.gatsbyjs.org/) commands)
 * **[Yarn](https://yarnpkg.com/)**
 
